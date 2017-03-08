@@ -18,7 +18,7 @@ In progress
 If you are studying at UiA and have some issues you want to address or maybe even a solution to them we would like to hear from you.
 
 Please contact us at: 
-Mail: gruppe10uia@gmail.com
+Mail:gruppe10uia@gmail.com
 Facebook: https://www.facebook.com/maghov.nor?fref=ts 
 
 #License
