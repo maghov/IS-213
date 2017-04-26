@@ -22,5 +22,3 @@ Mail:gruppe10uia@gmail.com
 Facebook: https://www.facebook.com/maghov.nor?fref=ts 
 
 #License
-GNU -General Public Licence
-https://www.gnu.org/licenses/gpl-3.0.en.html
