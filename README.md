@@ -23,7 +23,7 @@ Firebase
 In order to get started and help us out in this project certain steps need to be taken to get the program up and running on your computer. Currently, this project is only developed on Xcode and Windows integration has not been implemented as of this moment. 
 This project was written within Xcode version 8.3.2 and using the Swift 3 language, please try to use these versions as they are guaranteed to be compatible with the code available on GitHub, older and or eventual newer versions may have different results, so we recommend sticking to Xcode 8.3.2 and Swift 3.
 
-The first step is to download Xcode onto your machine, this can be done by the following steps: 
+* The first step is to download Xcode onto your machine, this can be done by the following steps: 
 
 1.	Open the App Store app on your Mac (by default it’s in the Dock).
 2.	In the search field in the top-right corner, type Xcode and press the Return key.
@@ -32,12 +32,14 @@ The first step is to download Xcode onto your machine, this can be done by the f
 5.	Enter your Apple ID and password when prompted.
 6.	Xcode is downloaded into your /Applications directory. (Apple, 2017)
 
-The second step is to have cocoapods (https://cocoapods.org ) installed on your machine, this is done by typing in the following command into your terminal: 
+* The second step is to have cocoapods (https://cocoapods.org ) installed on your machine, this is done by typing in the following command into your terminal: 
 
 ```$ sudo gem install cocoapods```
 
-The third step is to get Firebase up and running on your system, this is done so by following these steps: 
-
+* The third step is to get Firebase up and running on your system, this is done so by following these steps: 
+ 
+ https://firebase.google.com/docs/ios/setup
+* [For now, please follow the documentation from the actual fire base google website on how to get it up and running - a more detailed step by step guide for this project is on the to do list]( https://firebase.google.com/docs/ios/setup) - Documentation Firebase
 
 
 
@@ -60,16 +62,16 @@ KOMMER SNART
 ## Built With
 
 * [Cocoapods](https://cocoapods.org) - Libraries for Xcode
-* [Xcode](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [Xcode](https://maven.apache.org/) - Programming platform used to develop this application
+* [Firebase](https://firebase.google.com) - Database used for our system
 
 ## Authors
 
-* ** Magnus Høvik**
-* ** Erik Angell Berg**
-* ** Eirik Oliversen**
-* ** Mohammad Hussain**
-* ** John Jensen**
+* ** Magnus Høvik 
+* Erik Angell Berg 
+* Eirik Oliversen
+* Mohammad Hussain
+* John Jensen**
 
 
 ## License
