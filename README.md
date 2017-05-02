@@ -1,18 +1,28 @@
 # IS-213
-# Room Booking UIA
+# Booking Room Application
+
 This is an open source project for managing room reservations (focusing currently on only our school which is the University of Agder in Kristiansand, Norway). There are several campus buildings with different equipment and room sizes. Our goal is to optimise the booking system for students by having a way to see whether a room is being used or not making it easier to see which rooms are available. The project is currently a work in progress and is in no way finished. This being an MIT licenced project it is open to the public where 
 
-# Code Example
-In progress
 
-# Motivation
+## Getting Started
 
-This project is a part of a course at UIA (IS-213). We are students here and have experienced some trouble with the current booking system and have some ideas for improvenent. A lot of rooms are booked although not in use as well as the system itself is kind of cumbersome. We are using QR-codes as a easy and cheap way to address this.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-# Installation
+### Prerequisites
+
+Software that needs to be installed
+```
+Cocoapods 
+Xcode 8.3.2
+Swift 3
+Firebase 
+```
+
+### ## Installation
 
 In order to get started and help us out in this project certain steps need to be taken to get the program up and running on your computer. Currently, this project is only developed on Xcode and Windows integration has not been implemented as of this moment. 
 This project was written within Xcode version 8.3.2 and using the Swift 3 language, please try to use these versions as they are guaranteed to be compatible with the code available on GitHub, older and or eventual newer versions may have different results, so we recommend sticking to Xcode 8.3.2 and Swift 3.
+
 The first step is to download Xcode onto your machine, this can be done by the following steps: 
 
 1.	Open the App Store app on your Mac (by default it’s in the Dock).
@@ -24,19 +34,53 @@ The first step is to download Xcode onto your machine, this can be done by the f
 
 The second step is to have cocoapods (https://cocoapods.org ) installed on your machine, this is done by typing in the following command into your terminal: 
 
-$ sudo gem install cocoapods
+```$ sudo gem install cocoapods```
+
+The third step is to get Firebase up and running on your system, this is done so by following these steps: 
 
 
-#API Reference
-In progress
 
-#Contributors
-If you are studying at UiA and have some issues you want to address or maybe even a solution to them we would like to hear from you.
 
-Please contact us at: 
-Mail:gruppe10uia@gmail.com
-Facebook: https://www.facebook.com/maghov.nor?fref=ts 
+## Running the tests
 
-#License
-GNU -General Public Licence
-https://www.gnu.org/licenses/gpl-3.0.en.html
+KOMMER SNART
+
+### Break down into end to end tests
+
+KOMMER SNART
+
+### And coding style tests
+
+KOMMER SNART
+
+## Contributing
+
+KOMMER SNART
+
+## Built With
+
+* [Cocoapods](https://cocoapods.org) - Libraries for Xcode
+* [Xcode](https://maven.apache.org/) - Dependency Management
+* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+
+## Authors
+
+* ** Magnus Høvik**
+* ** Erik Angell Berg**
+* ** Eirik Oliversen**
+* ** Mohammad Hussain**
+* ** John Jensen**
+
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+## Acknowledgments
+
+* https://www.youtube.com/watch?v=dfg17snfcq8 
+* http://www.appcoda.com/qr-code-reader-swift/ 
+* https://www.youtube.com/channel/UC-d1NWv5IWtIkfH47ux4dWA
+* https://developer.apple.com/library/content/referencelibrary/GettingStarted/DevelopiOSAppsSwift/BuildABasicUI.html#//apple_ref/doc/uid/TP40015214-CH5-SW1
+* https://www.youtube.com/channel/UCDIBBmkZIB2hjBsk1hUImdA
+* https://www.youtube.com/channel/UCuP2vJ6kRutQBfRmdcI92mA
