@@ -22,6 +22,10 @@ The first step is to download Xcode onto your machine, this can be done by the f
 5.	Enter your Apple ID and password when prompted.
 6.	Xcode is downloaded into your /Applications directory. (Apple, 2017)
 
+The second step is to have cocoapods (https://cocoapods.org ) installed on your machine, this is done by typing in the following command into your terminal: 
+
+$ sudo gem install cocoapods
+
 
 #API Reference
 In progress
