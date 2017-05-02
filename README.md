@@ -1,5 +1,5 @@
 # IS-213
-# Booking Room Application
+# Room Booking Application
 
 This is an open source project for managing room reservations (focusing currently on only our school which is the University of Agder in Kristiansand, Norway). There are several campus buildings with different equipment and room sizes. Our goal is to optimise the booking system for students by having a way to see whether a room is being used or not making it easier to see which rooms are available. The project is currently a work in progress and is in no way finished. This being an MIT licenced project it is open to the public where 
 
@@ -65,11 +65,11 @@ KOMMER SNART
 
 ## Authors
 
-* ** Magnus Høvik 
+* Magnus Høvik 
 * Erik Angell Berg 
 * Eirik Oliversen
 * Mohammad Hussain
-* John Jensen**
+* John Jensen
 
 
 ## License
