@@ -18,8 +18,6 @@ class FirstViewController: UIViewController{ @IBAction func logOut(_ sender: UIB
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-       
-        print(FIRAuth.auth()?.currentUser?.email)
         
     }
 
