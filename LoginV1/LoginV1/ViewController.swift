@@ -20,9 +20,7 @@ class ViewController: UIViewController {
     @IBAction func action(_ sender: UIButton) {
         if emailText.text != "" && passwordText.text != ""
         {
-            if segmentController.selectedSegmentIndex == 0 //Login user
-                
-                
+            if segmentController.selectedSegmentIndex == 0 //Login user 
             {
                 FIRAuth.auth()?.signIn(withEmail: emailText.text!, password: passwordText.text!, completion: { (user, error) in
                     if user != nil
