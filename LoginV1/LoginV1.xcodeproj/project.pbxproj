@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		118F04C01ED6CF1C0054DAC1 /* RoomModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118F04BF1ED6CF1C0054DAC1 /* RoomModel.swift */; };
+		118F04C21ED6D06D0054DAC1 /* ViewControllerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118F04C11ED6D06D0054DAC1 /* ViewControllerTableViewCell.swift */; };
 		593106041E2859C776222F7D /* Pods_LoginV1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C927243C2617CBB459AAB364 /* Pods_LoginV1.framework */; };
 		7A36D9261EB898A00028EA35 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A36D9251EB898A00028EA35 /* SecondViewController.swift */; };
 		7A36D9281EB898B50028EA35 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A36D9271EB898B50028EA35 /* FirstViewController.swift */; };
@@ -14,7 +16,6 @@
 		7A36D92D1EB8AD2D0028EA35 /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A36D92B1EB8AD2D0028EA35 /* QRCodeViewController.swift */; };
 		7A36D92E1EB8AD2D0028EA35 /* QRScannerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A36D92C1EB8AD2D0028EA35 /* QRScannerController.swift */; };
 		7AA14E931EB8B33500F9D3B0 /* QRGenetatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA14E921EB8B33500F9D3B0 /* QRGenetatorViewController.swift */; };
-		7AA173EF1EAFEA4E00DE456C /* RoomModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA173EE1EAFEA4E00DE456C /* RoomModel.swift */; };
 		F952C3EC1EAA1DA900FE79AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F952C3EB1EAA1DA900FE79AA /* AppDelegate.swift */; };
 		F952C3EE1EAA1DA900FE79AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F952C3ED1EAA1DA900FE79AA /* ViewController.swift */; };
 		F952C3F11EAA1DA900FE79AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F952C3EF1EAA1DA900FE79AA /* Main.storyboard */; };
@@ -24,13 +25,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		118F04BF1ED6CF1C0054DAC1 /* RoomModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomModel.swift; sourceTree = "<group>"; };
+		118F04C11ED6D06D0054DAC1 /* ViewControllerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewControllerTableViewCell.swift; path = ../../../../Downloads/RoomBooking3/RoomBooking3/ViewControllerTableViewCell.swift; sourceTree = "<group>"; };
 		7A36D9251EB898A00028EA35 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		7A36D9271EB898B50028EA35 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		7A36D9291EB8A3D60028EA35 /* RoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomViewController.swift; sourceTree = "<group>"; };
 		7A36D92B1EB8AD2D0028EA35 /* QRCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRCodeViewController.swift; sourceTree = "<group>"; };
 		7A36D92C1EB8AD2D0028EA35 /* QRScannerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRScannerController.swift; sourceTree = "<group>"; };
 		7AA14E921EB8B33500F9D3B0 /* QRGenetatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRGenetatorViewController.swift; sourceTree = "<group>"; };
-		7AA173EE1EAFEA4E00DE456C /* RoomModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RoomModel.swift; path = ../../RoomBooking3/RoomBooking3/RoomModel.swift; sourceTree = "<group>"; };
 		B8932475747EA3C3B8A72935 /* Pods-LoginV1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginV1.release.xcconfig"; path = "Pods/Target Support Files/Pods-LoginV1/Pods-LoginV1.release.xcconfig"; sourceTree = "<group>"; };
 		C825362595086C45609DFD6D /* Pods-LoginV1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginV1.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LoginV1/Pods-LoginV1.debug.xcconfig"; sourceTree = "<group>"; };
 		C927243C2617CBB459AAB364 /* Pods_LoginV1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoginV1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -106,8 +108,9 @@
 				F952C3F21EAA1DA900FE79AA /* Assets.xcassets */,
 				F952C3F41EAA1DA900FE79AA /* LaunchScreen.storyboard */,
 				F952C3F71EAA1DA900FE79AA /* Info.plist */,
-				7AA173EE1EAFEA4E00DE456C /* RoomModel.swift */,
+				118F04C11ED6D06D0054DAC1 /* ViewControllerTableViewCell.swift */,
 				F952C3FD1EAA202D00FE79AA /* GoogleService-Info.plist */,
+				118F04BF1ED6CF1C0054DAC1 /* RoomModel.swift */,
 			);
 			path = LoginV1;
 			sourceTree = "<group>";
@@ -147,7 +150,7 @@
 				TargetAttributes = {
 					F952C3E71EAA1DA900FE79AA = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = 887YJ27ZR8;
+						DevelopmentTeam = P8MVD2J266;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -239,9 +242,10 @@
 			files = (
 				7A36D9261EB898A00028EA35 /* SecondViewController.swift in Sources */,
 				F952C3EE1EAA1DA900FE79AA /* ViewController.swift in Sources */,
+				118F04C21ED6D06D0054DAC1 /* ViewControllerTableViewCell.swift in Sources */,
+				118F04C01ED6CF1C0054DAC1 /* RoomModel.swift in Sources */,
 				7A36D92D1EB8AD2D0028EA35 /* QRCodeViewController.swift in Sources */,
 				F952C3EC1EAA1DA900FE79AA /* AppDelegate.swift in Sources */,
-				7AA173EF1EAFEA4E00DE456C /* RoomModel.swift in Sources */,
 				7A36D92E1EB8AD2D0028EA35 /* QRScannerController.swift in Sources */,
 				7AA14E931EB8B33500F9D3B0 /* QRGenetatorViewController.swift in Sources */,
 				7A36D9281EB898B50028EA35 /* FirstViewController.swift in Sources */,
@@ -370,11 +374,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 887YJ27ZR8;
+				DEVELOPMENT_TEAM = P8MVD2J266;
 				INFOPLIST_FILE = LoginV1/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = eoliversen.LoginV11;
+				PRODUCT_BUNDLE_IDENTIFIER = MagnusHovik.RoomBooking3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
@@ -387,11 +391,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 887YJ27ZR8;
+				DEVELOPMENT_TEAM = P8MVD2J266;
 				INFOPLIST_FILE = LoginV1/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = eoliversen.LoginV11;
+				PRODUCT_BUNDLE_IDENTIFIER = MagnusHovik.RoomBooking3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;

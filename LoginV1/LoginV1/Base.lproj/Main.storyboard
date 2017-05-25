@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -173,7 +173,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="69"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="APH-vn-R2P" id="ZE0-VO-8TA">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="69"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="68.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Le9-53-iit">
@@ -259,9 +259,6 @@
                                 <state key="normal" title="Submit"/>
                                 <connections>
                                     <action selector="buttonAddRoom:" destination="NIX-sX-71h" eventType="touchUpInside" id="ac1-MM-yIv"/>
-                                    <segue destination="e73-jn-Lcf" kind="show" identifier="segue" id="fqR-i7-cGM">
-                                        <nil key="action"/>
-                                    </segue>
                                 </connections>
                             </button>
                         </subviews>
@@ -274,6 +271,7 @@
                         <outlet property="textFieldDetails" destination="sSo-jt-mkY" id="Fwn-N8-Xha"/>
                         <outlet property="textFieldName" destination="x2v-Ql-kNY" id="TZx-v8-ant"/>
                         <outlet property="textFieldSpace" destination="K20-gN-BwA" id="Mhv-4m-8Kk"/>
+                        <segue destination="e73-jn-Lcf" kind="show" identifier="segue" id="Igb-Wr-TrR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VZS-rR-se9" sceneMemberID="firstResponder"/>
@@ -315,15 +313,28 @@
                                 </items>
                             </navigationBar>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fCQ-Lr-4Zf">
-                                <rect key="frame" x="91" y="458" width="50" height="30"/>
+                                <rect key="frame" x="288" y="101" width="50" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <segue destination="vqo-z0-ov3" kind="show" id="umI-Mq-oqI">
-                                        <nil key="action"/>
-                                    </segue>
+                                    <segue destination="NIX-sX-71h" kind="show" identifier="" id="ADM-vE-Cde"/>
                                 </connections>
                             </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7Rr-LF-z48">
+                                <rect key="frame" x="16" y="305" width="343" height="305"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="mnK-9f-nlQ">
+                                        <rect key="frame" x="0.0" y="28" width="343" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mnK-9f-nlQ" id="kTg-ha-e7G">
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
@@ -336,7 +347,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7hv-iv-IJa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="769" y="1092"/>
+            <point key="canvasLocation" x="768.79999999999995" y="1091.6041979010495"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Re0-Yj-hHQ">
@@ -499,7 +510,7 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noimage" translatesAutoresizingMaskIntoConstraints="NO" id="NbX-hH-SS4">
-                                <rect key="frame" x="16" y="199.5" width="343" height="255.5"/>
+                                <rect key="frame" x="16" y="225" width="309" height="230"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="NbX-hH-SS4" secondAttribute="height" multiplier="55:41" id="NI1-uS-uTi"/>
                                 </constraints>
@@ -540,6 +551,6 @@
         <image name="second" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="umI-Mq-oqI"/>
+        <segue reference="ADM-vE-Cde"/>
     </inferredMetricsTieBreakers>
 </document>

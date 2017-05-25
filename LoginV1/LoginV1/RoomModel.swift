@@ -11,12 +11,15 @@ class RoomModel {
     var name: String?
     var space: String?
     var details: String?
+    var tielleve: String?
+
     
-    init(id: String?, name: String?, space: String?, details: String?) {
+    init(id: String?, name: String?, space: String?, details: String?, tielleve:String?) {
         self.id = id;
         self.name = name;
         self.space = space;
         self.details = details;
+        self.tielleve = tielleve;
     }
     
 }

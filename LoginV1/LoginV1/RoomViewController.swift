@@ -13,6 +13,8 @@ import Firebase
 
 class RoomViewController: UIViewController {
 
+    
+
     @IBOutlet weak var dLabel: UILabel!
 
     @IBOutlet weak var navigationBar: UINavigationBar!
@@ -25,7 +27,8 @@ class RoomViewController: UIViewController {
         dLabel.text = "Romnummer " + roomList[myIndex].name!
         
         bLabel.text = "Antall plasser " + roomList[myIndex].space!
-
+        
+ 
         
         navigationBar.topItem?.title = roomList[myIndex].name
         
