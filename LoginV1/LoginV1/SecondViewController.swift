@@ -17,16 +17,13 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     
     @IBOutlet weak var textFieldSpace: UITextField!
-
     @IBOutlet weak var textFieldName: UITextField!
-  
     @IBOutlet weak var textFieldDetails: UITextField!
-    
     @IBOutlet weak var tblRooms: UITableView!
-
     @IBAction func buttonAddRoom(_ sender: UIButton) {
         addRoom()
     }
+
     
     public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 
@@ -108,6 +105,13 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
+    //Hides keyboard when user touches outside textfield
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+
 
 
 }
