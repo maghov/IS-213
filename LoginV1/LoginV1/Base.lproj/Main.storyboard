@@ -28,7 +28,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bmu-22-Gic">
                                 <rect key="frame" x="77" y="223" width="220" height="30"/>
@@ -58,7 +58,7 @@
                                     <segment title="Sign up"/>
                                 </segments>
                                 <connections>
-                                    <action selector="segmentControllerView:" destination="BYZ-38-t0r" eventType="valueChanged" id="J2Z-Qg-pPS"/>
+                                    <action selector="SegmentControllerView:" destination="BYZ-38-t0r" eventType="valueChanged" id="AgU-Ll-cPq"/>
                                 </connections>
                             </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eZ8-O2-7qF">
@@ -71,7 +71,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -81,7 +81,7 @@
                         <outlet property="confirmPasswordText" destination="I80-mk-KyJ" id="twM-xG-J6R"/>
                         <outlet property="emailText" destination="Bmu-22-Gic" id="x1g-o0-S05"/>
                         <outlet property="passwordText" destination="833-Q7-LOc" id="VaO-hL-niX"/>
-                        <outlet property="segmentController" destination="CXJ-1H-Li6" id="01i-lE-4C0"/>
+                        <outlet property="segmentController" destination="CXJ-1H-Li6" id="gdG-uJ-mlq"/>
                         <segue destination="vqo-z0-ov3" kind="show" identifier="segue1" id="QnE-ox-hEM"/>
                     </connections>
                 </viewController>
