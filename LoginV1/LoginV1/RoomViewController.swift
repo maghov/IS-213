@@ -13,13 +13,19 @@ import Firebase
 
 class RoomViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
 
-    
+    var ref: FIRDatabaseReference!
 
       @IBOutlet weak var navigationBar: UINavigationBar!
     
     // Data model: These strings will be the data for the table view cells
-    let animals: [String] = ["10 - 11", "11 - 12", "12 - 13", "13 - 14", "14 - 15"]
+
+    let time: [String] = ["10 - 11                                       " + roomList[myIndex].tielleve!]
+                          //"11 - 12               " + roomList[myIndex].tielleve!
+                          
     
+    
+ 
+
     // cell reuse id (cells that scroll out of view can be reused)
     let cellReuseIdentifier = "cell"
     
@@ -45,7 +51,7 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.animals.count
+        return self.time.count
     }
     
     // create a cell for each table view row
@@ -55,7 +61,9 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
         let cell:UITableViewCell = self.tableView.dequeueReusableCell(withIdentifier: cellReuseIdentifier) as UITableViewCell!
         
         // set the text from the data model
-        cell.textLabel?.text = self.animals[indexPath.row]
+        cell.textLabel?.text = self.time[indexPath.row]
+
+        
         
         return cell
     }
@@ -63,6 +71,27 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
     // method to run when table view cell is tapped
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("You tapped cell number \(indexPath.row).")
+        
+        self.ref = FIRDatabase.database().reference()
+        
+        
+        ref.child("list").observeSingleEvent(of: .value, with: { (snapshot) in
+            
+            if snapshot.hasChild(roomList[myIndex].name!){
+                
+                print("true rooms exist")
+                
+            }else{
+                
+                print("false room doesn't exist")
+            }
+            
+            
+        })
+        
+        
+        
+        
     }
 
 
