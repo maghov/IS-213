@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -46,7 +46,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="vqo-z0-ov3" kind="show" identifier="segue1" id="2GA-iQ-YWE"/>
+                                    <action selector="action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mdc-Xc-D5q"/>
                                 </connections>
                             </button>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="CXJ-1H-Li6">
@@ -77,15 +77,17 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
-                        <outlet property="confirmPasswordText" destination="I80-mk-KyJ" id="qv7-rK-QXy"/>
-                        <outlet property="emailText" destination="Bmu-22-Gic" id="fNg-T9-7fB"/>
-                        <outlet property="passwordText" destination="833-Q7-LOc" id="zvZ-se-QTQ"/>
-                        <outlet property="segmentController" destination="CXJ-1H-Li6" id="g5z-Ig-mxA"/>
+                        <outlet property="actionButton" destination="3Rg-Tt-qbv" id="a1U-fg-MUO"/>
+                        <outlet property="confirmPasswordText" destination="I80-mk-KyJ" id="twM-xG-J6R"/>
+                        <outlet property="emailText" destination="Bmu-22-Gic" id="x1g-o0-S05"/>
+                        <outlet property="passwordText" destination="833-Q7-LOc" id="VaO-hL-niX"/>
+                        <outlet property="segmentController" destination="CXJ-1H-Li6" id="01i-lE-4C0"/>
+                        <segue destination="vqo-z0-ov3" kind="show" identifier="segue1" id="QnE-ox-hEM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-966" y="53"/>
+            <point key="canvasLocation" x="-1105" y="247"/>
         </scene>
         <!--First-->
         <scene sceneID="XGQ-cE-8mF">
@@ -354,7 +356,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vjk-s6-6MR" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-183" y="53"/>
+            <point key="canvasLocation" x="-202" y="247"/>
         </scene>
         <!--Code View Controller-->
         <scene sceneID="GcO-mR-tMv">
@@ -539,6 +541,6 @@
         <image name="second" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ADM-vE-Cde"/>
+        <segue reference="8uT-Ye-XXD"/>
     </inferredMetricsTieBreakers>
 </document>
