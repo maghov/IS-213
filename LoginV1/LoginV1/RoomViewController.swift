@@ -13,7 +13,7 @@ import Firebase
 
 class RoomViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
 
-    
+    var ref: FIRDatabaseReference!
 
       @IBOutlet weak var navigationBar: UINavigationBar!
     
@@ -71,6 +71,23 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
     // method to run when table view cell is tapped
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("You tapped cell number \(indexPath.row).")
+        
+        self.ref = FIRDatabase.database().reference()
+        
+        
+        ref.child("list").observeSingleEvent(of: .value, with: { (snapshot) in
+            
+            if snapshot.hasChild(roomList[myIndex].name!){
+                
+                print("true rooms exist")
+                
+            }else{
+                
+                print("false room doesn't exist")
+            }
+            
+            
+        })
         
         
         

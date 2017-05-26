@@ -57,7 +57,7 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     func addRoom() {
-        let key = refRooms.childByAutoId().key
+        let key = textFieldName.text! as String
     
         let room = ["id": key,
                         "name": textFieldName.text! as String,
