@@ -10,10 +10,16 @@ import UIKit
 //import Firebase
 import FirebaseAuth
 
-class FirstViewController: UIViewController{ @IBAction func logOut(_ sender: UIButton) {
-    try! FIRAuth.auth()?.signOut()
-    performSegue(withIdentifier: "segueMainToLogin", sender: self)
+class FirstViewController: UIViewController{
+    
+    @IBOutlet weak var buttonLogOut: UIBarButtonItem!
+    @IBAction func buttonLogOut(_ sender: UIBarButtonItem) {
+        try! FIRAuth.auth()?.signOut()
+        performSegue(withIdentifier: "segueMainToLogin", sender: self)
     }
+    
+    
+    
     
     
     override func viewDidLoad() {
