@@ -68,7 +68,6 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
         refRooms = FIRDatabase.database().reference().child("list")
         
         refRooms.observe(FIRDataEventType.value, with:{(snapshot) in
