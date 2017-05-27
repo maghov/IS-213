@@ -68,31 +68,47 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
         return cell
     }
     
+    
+    func confirm() {
+        
+        
+        
+    }
+    
     // method to run when table view cell is tapped
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("You tapped cell number \(indexPath.row).")
         
         self.ref = FIRDatabase.database().reference()
+
         
         
-        ref.child("list").observeSingleEvent(of: .value, with: { (snapshot) in
-            
-            if snapshot.hasChild(roomList[myIndex].name!){
-                
-                print("true rooms exist")
-                
-            }else{
-                
-                print("false room doesn't exist")
-            }
+        let prntRef  = FIRDatabase.database().reference().child("list").child(roomList[myIndex].name!)
+        
+        if roomList[myIndex].tielleve! == "Ledig" {
+        
+        prntRef.updateChildValues(["tielleve": "Opptatt"])
             
             
-        })
+        } else if roomList[myIndex].tielleve! == "Opptatt" {
         
+        prntRef.updateChildValues(["tielleve": "Ledig"])
         
-        
+        } else {
+    
+        print("test")
+
+
+
+    }
         
     }
+      
+        
+        
+        
+        
+    
 
 
     override func didReceiveMemoryWarning() {
