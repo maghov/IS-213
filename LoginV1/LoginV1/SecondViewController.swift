@@ -44,12 +44,11 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
         let room: RoomModel
         
         room = roomList[indexPath.row]
-        
+    
         cell.lblName.text = room.name
         cell.lblSpace.text = "Antall plasser " + room.space!
         cell.lblDetails.text = room.details
 
-        
         return cell
     }
     

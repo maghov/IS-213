@@ -25,11 +25,13 @@ class AddRoomsController: UIViewController {
     
     func addRoom() {
         let key = textFieldRoomName.text! as String
+        let tiEllve = "10-11"
         
         let room = ["id": key,
                     "name": textFieldRoomName.text! as String,
                     "space": textFieldNumberOfSeats.text! as String,
-                    "details": textFieldDetails.text! as String
+                    "details": textFieldDetails.text! as String,
+                    "tiElle": tiEllve
         ]
         
         refRoomsFromDataBase.child(key).setValue(room)
