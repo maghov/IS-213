@@ -112,6 +112,6 @@ This project is licensed under the MIT License - see the [LICENSE.md](https://gi
 * https://www.youtube.com/watch?v=dfg17snfcq8 
 * http://www.appcoda.com/qr-code-reader-swift/ 
 * https://www.youtube.com/channel/UC-d1NWv5IWtIkfH47ux4dWA
-* https://developer.apple.com/library/content/referencelibrary/GettingStarted/DevelopiOSAppsSwift/BuildABasicUI.html#//apple_ref/doc/uid/TP40015214-CH5-SW1
+* [GettingStarted/DevelopiOSAppsSwift](https://developer.apple.com/library/content/referencelibrary/GettingStarted/DevelopiOSAppsSwift/BuildABasicUI.html#//apple_ref/doc/uid/TP40015214-CH5-SW1)
 * https://www.youtube.com/channel/UCDIBBmkZIB2hjBsk1hUImdA
 * https://www.youtube.com/channel/UCuP2vJ6kRutQBfRmdcI92mA
