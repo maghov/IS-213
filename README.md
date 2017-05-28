@@ -1,4 +1,4 @@
-**Table of Contents**
+**Table of Contents**  *generated with [DocToc](http://doctoc.herokuapp.com/)*
 
 - [IS-213](#)
 - [Room Booking Application](#)
