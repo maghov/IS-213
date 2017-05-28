@@ -1,18 +1,18 @@
 ## Table of Contents
 
 * [Room Booking Application](#room-Booking-Application)
-* [Getting Started](#Getting-Started)
+* [Getting Started](#getting-Started)
    * [Prerequisites](#prerequisites)
    * [Installation](#installation)
-   * [Running the tests](#Running-the-tests)
-   * [Break down into end to end tests](#Break-down-into-end-to-end-tests)
-   * [And coding style tests](#And-coding-styles-tests)
-* [Contributing](#Contributing)
-* [Issues](#Issues)
-* [Built With](#Built-With)
-* [Authors](#Authors)
-* [License](#License)
-* [Acknowledgments](#Acknowledgments)
+   * [Running the tests](#running-the-tests)
+   * [Break down into end to end tests](#break-down-into-end-to-end-tests)
+   * [And coding style tests](#and-coding-styles-tests)
+* [Contributing](#contributing)
+* [Issues](#issues)
+* [Built With](#built-With)
+* [Authors](#authors)
+* [License](#license)
+* [Acknowledgments](#acknowledgments)
 
 ## IS-213
 ## Room Booking Application
