@@ -65,7 +65,7 @@ Once all the necessary programs are installed on your local machine, you may the
  
  3. The third way is by doing it directly from within Xcode. This can be done by accessing the "Source Control" meny, and choosing the "Pull Request" option. 
  
-Once the project are on your machine, you must navigate to the downloaded folder and run the "LoginV1.xcodeproj" file. This will open up the project directly on Xcode. Afterwards you must run the project in order for it to compile, and test to see if everything builds correctly. 
+Once the project is on your machine, you must navigate to the downloaded folder and run the "LoginV1.xcodeproj" file. This will open up the project directly on Xcode. Afterwards you must run the project in order for it to compile, and test to see if everything builds correctly. 
 
 #### Running the tests
 
