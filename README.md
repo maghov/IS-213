@@ -10,7 +10,7 @@
 * [Contributing](#contributing)
     * [No Code Related Contribution](#no-code-related-contributing)
     * [Code Related Contribution](#code-related-contributing)
-* [Issues](#issues)
+    * [Issues](#issues)
 * [Built With](#built-With)
 * [Authors](#authors)
 * [License](#license)
@@ -72,6 +72,7 @@ KOMMER SNART
 KOMMER SNART
 
 ## Contributing
+
 We appreciate all types of contributors that wish to help us in this project. Programming skills are not a necessity, and people with different types of backgrounds are welcome to contribute. 
 
 #### No Code Related Contribution
@@ -85,11 +86,14 @@ Currently the artwork being used are the standard options that come with Xcode, 
 
 We require contributers that are willing to help us on our [Wiki!](https://github.com/maghov/IS-213/wiki) page. Currently, all the information about this project is written on this ReadMe file, but we would like to have better documantion that documents each aspect of our project. 
 
+
 #### Code Related Contribution
 
+We appreciate any type of code contribution within our project. The current language being used as of May 2017 is Swift 3.0. 
 
+#### Issues 
 
-## Issues 
+The current [Issues](https://github.com/maghov/IS-213/issues)can be accessed on our issues github tab. It consists of features that we wish to implement, and features that are implemented but are not working as desired. 
 
 ## Built With
 
