@@ -1,4 +1,19 @@
-# IS-213
+# **Table of Contents** 
+- [Room Booking Application](#)
+	- [Getting Started](##)
+		- [Prerequisites](###)
+		- [Installation](###)
+	- [Running the tests](##)
+		- [Break down into end to end tests](#)
+		- [And coding style tests](#)
+		- [Contributing](#)
+	- [Issues](#)
+	- [Built With](#)
+	- [Authors](#)
+	- [License](#)
+	- [Acknowledgments](#)
+
+## IS-213
 # Room Booking Application
 
 This is an open source project for managing room reservations (focusing currently on only our school which is the University of Agder in Kristiansand, Norway). There are several campus buildings with different equipment and room sizes. Our goal is to optimise the booking system for students by having a way to see whether a room is being used or not making it easier to see which rooms are available. The project is currently a work in progress and is in no way finished. This being an MIT licenced project it is open to the public where 
@@ -18,7 +33,7 @@ Swift 3
 Firebase 
 ```
 
-### ## Installation
+### Installation
 
 In order to get started and help us out in this project certain steps need to be taken to get the program up and running on your computer. Currently, this project is only developed on Xcode and Windows integration has not been implemented as of this moment. 
 This project was written within Xcode version 8.3.2 and using the Swift 3 language, please try to use these versions as they are guaranteed to be compatible with the code available on GitHub, older and or eventual newer versions may have different results, so we recommend sticking to Xcode 8.3.2 and Swift 3.
@@ -53,9 +68,19 @@ KOMMER SNART
 
 KOMMER SNART
 
-## Contributing
+### Contributing
+We appreciate all types of contributors that wish to help us in this project. Programming skills are not a necessity, and people with different types of backgrounds are welcome to contribute. 
 
-KOMMER SNART
+The following contributions are needed that are not code related: 
+* Artwork 
+
+Currently the artwork being used are the standard options that come with Xcode, we would appreciate if there were more options available for people to choose between. Some high priority implementations that we would like to implement within our project are different types of themes,and a night/day versions. 
+
+* Documenation
+
+We require contributers that are willing to help us on our [Wiki!](https://github.com/maghov/IS-213/wiki) page. Currently, all the information about this project is written on this ReadMe file, but we would like to have better documantion that documents each aspect of our project. 
+
+## Issues 
 
 ## Built With
 
