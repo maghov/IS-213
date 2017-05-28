@@ -51,6 +51,8 @@ This project was written within Xcode version 8.3.2 and using the Swift 3 langua
 
 ```$ sudo gem install cocoapods```
 
+NOTE: This must be installed in the same file directory as Xcode
+
 ##### The third step is to get Firebase up and running on your system, this is done so by following these steps: 
 [For now, please follow the documentation from the actual fire base google website on how to get it up and running - a more detailed step by step guide for this project is on the to do list]( https://firebase.google.com/docs/ios/setup)
 
@@ -65,7 +67,7 @@ Once all the necessary programs are installed on your local machine, you may the
  
  3. The third way is by doing it directly from within Xcode. This can be done by accessing the "Source Control" meny, and choosing the "Pull Request" option. 
  
-Once the project are on your machine, you must navigate to the downloaded folder and run the "LoginV1.xcodeproj" file. This will open up the project directly on Xcode. Afterwards you must run the project in order for it to compile, and test to see if everything builds correctly. 
+Once the project is on your machine, you must navigate to the downloaded folder and run the "LoginV1.xcodeproj" file. This will open up the project directly on Xcode. Afterwards you must run the project in order for it to compile, and test to see if everything builds correctly. 
 
 #### Running the tests
 
