@@ -31,7 +31,7 @@ class AddRoomsController: UIViewController {
                     "name": textFieldRoomName.text! as String,
                     "space": textFieldNumberOfSeats.text! as String,
                     "details": textFieldDetails.text! as String,
-                    "tiElle": tiEllve
+                    "tiEllve": tiEllve
         ]
         
         refRoomsFromDataBase.child(key).setValue(room)

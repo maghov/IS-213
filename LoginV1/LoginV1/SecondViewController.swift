@@ -83,8 +83,9 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
                     let id = roomObject?["id"]
                     let details = roomObject? ["details"]
                     let tielleve = roomObject? ["tielleve"]
+                    let ellevetolv = roomObject? ["ellevetolv"]
                     
-                    let room = RoomModel(id: id as! String?, name: name as! String?, space: space as! String?, details: details as! String?, tielleve: tielleve as! String?)
+                    let room = RoomModel(id: id as! String?, name: name as! String?, space: space as! String?, details: details as! String?, tielleve: tielleve as! String?, ellevetolv: ellevetolv as! String?)
                     roomList.append(room)
                     
                     
