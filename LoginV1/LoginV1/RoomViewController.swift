@@ -11,16 +11,24 @@ import Firebase
 
 
 
+
 class RoomViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
 
-    var ref: FIRDatabaseReference!
+    var index = 0
+    
+    var ref = FIRDatabase.database().reference()
+    
+    let prntRef  = FIRDatabase.database().reference().child("list").child(roomList[myIndex].name!)
+
+    @IBOutlet weak var tableView: UITableView!
 
       @IBOutlet weak var navigationBar: UINavigationBar!
     
     // Data model: These strings will be the data for the table view cells
 
-    let time: [String] = ["10 - 11                                       " + roomList[myIndex].tielleve!]
-                          //"11 - 12               " + roomList[myIndex].tielleve!
+  let time: [String] = ["10 - 11                                       " + roomList[myIndex].tielleve!,
+                        
+                        "11 - 12                                       " + roomList[myIndex].ellevetolv!]
                           
     
     
@@ -30,7 +38,7 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
     let cellReuseIdentifier = "cell"
     
     // don't forget to hook this up from the storyboard
-    @IBOutlet var tableView: UITableView!
+    
     
     @IBOutlet weak var labelRoomNumber: UILabel!
 
@@ -42,7 +50,8 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
         navigationBar.topItem?.title = roomList[myIndex].name
         
         labelRoomNumber.text = roomList[myIndex].name
-    }
+        }
+    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.time.count
@@ -62,46 +71,99 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
         return cell
     }
     
-    
-    func confirm() {
+    func createAlert(title: String, message: String) {
         
+        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)
+        
+        
+        alert.addAction(UIAlertAction(title: "Bekreft", style: UIAlertActionStyle.default, handler: { (action) in
+            alert.dismiss(animated: true, completion: self.tableView.reloadData)
+            
+            if self.index == 0 {
+                self.confirmtiElleve()
+            }
+            
+            else if self.index == 1 {
+                self.confirmelleveTolv()
+
+            }
+
+    
+        }))
+        
+        alert.addAction(UIAlertAction(title: "Nei", style: UIAlertActionStyle.destructive, handler: { (action) in
+            alert.dismiss(animated: true, completion: self.tableView.reloadData)
+            
+            
+
+        }))
+        self.present(alert, animated: true, completion: self.tableView.reloadData)
+
         
         
     }
+    
+
+
+    func confirmtiElleve() {
+        
+        
+        if roomList[myIndex].tielleve! == "Ledig" {
+            
+            prntRef.updateChildValues(["tielleve": "Opptatt"])
+            
+        } else if roomList[myIndex].tielleve! == "Opptatt" {
+            
+            prntRef.updateChildValues(["tielleve": "Ledig"])
+        
+        } else {
+            print("test")
+        }
+    }
+    
+    
+    func confirmelleveTolv() {
+            
+        if roomList[myIndex].ellevetolv! == "Ledig" {
+            
+            prntRef.updateChildValues(["ellevetolv": "Opptatt"])
+            
+        } else if roomList[myIndex].ellevetolv! == "Opptatt" {
+            
+            prntRef.updateChildValues(["ellevetolv": "Ledig"])
+            
+            
+        } else {
+            
+            print("test")
+            
+            
+        }
+   
+    }
+    
+    
+    
+   
     
     // method to run when table view cell is tapped
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("You tapped cell number \(indexPath.row).")
         
-        self.ref = FIRDatabase.database().reference()
+        if indexPath.row == 0 {
+            index = indexPath.row
+        createAlert(title: "Booke dette rommet?", message: roomList[myIndex].name!);
 
-        
-        
-        let prntRef  = FIRDatabase.database().reference().child("list").child(roomList[myIndex].name!)
-        
-        if roomList[myIndex].tielleve! == "Ledig" {
-        
-        prntRef.updateChildValues(["tielleve": "Opptatt"])
             
-            
-        } else if roomList[myIndex].tielleve! == "Opptatt" {
+        }
+        else if indexPath.row == 1 {
+            index = indexPath.row
+        createAlert(title: "Booke dette rommet?", message: roomList[myIndex].name!);
+          
+        }
         
-        prntRef.updateChildValues(["tielleve": "Ledig"])
-        
-        } else {
-    
-        print("test")
-
-
-
-    }
         
     }
-      
-        
-        
-        
-    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
