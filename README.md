@@ -18,16 +18,13 @@
 
 ## IS-213
 ## Room Booking Application
-
 This is an open source project for managing room reservations (focusing currently on only our school which is the University of Agder in Kristiansand, Norway). There are several campus buildings with different equipment and room sizes. Our goal is to optimise the booking system for students by having a way to see whether a room is being used or not making it easier to see which rooms are available. The project is currently a work in progress and is in no way finished. This being an MIT licenced project it is open to the public where 
 
 
 ## Getting Started
-
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
 #### Prerequisites
-
 Software that needs to be installed
 ```
 Cocoapods 
@@ -37,7 +34,6 @@ Firebase
 ```
 
 #### Installation
-
 In order to get started and help us out in this project certain steps need to be taken to get the program up and running on your computer. Currently, this project is only developed on Xcode and Windows integration has not been implemented as of this moment. 
 This project was written within Xcode version 8.3.2 and using the Swift 3 language, please try to use these versions as they are guaranteed to be compatible with the code available on GitHub, older and or eventual newer versions may have different results, so we recommend sticking to Xcode 8.3.2 and Swift 3.
 
@@ -72,11 +68,9 @@ KOMMER SNART
 KOMMER SNART
 
 ## Contributing
-
 We appreciate all types of contributors that wish to help us in this project. Programming skills are not a necessity, and people with different types of backgrounds are welcome to contribute. 
 
 #### No Code Related Contribution
-
 The following contributions are needed that are not code related: 
 * Artwork 
 
@@ -88,11 +82,9 @@ We require contributers that are willing to help us on our [Wiki!](https://githu
 
 
 #### Code Related Contribution
-
 We appreciate any type of code contribution within our project. The current language being used as of May 2017 is Swift 3.0. 
 
 #### Issues 
-
 The current can be accessed on our issues github tab or by clicking on [This!](https://github.com/maghov/IS-213/issues) link. It consists of features that we wish to implement, and features that are implemented but are not working as desired. 
 
 ## Built With
@@ -111,7 +103,6 @@ The current can be accessed on our issues github tab or by clicking on [This!](h
 
 
 ## License
-
 This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/maghov/IS-213/blob/master/LICENSE.txt) file for details
 
 ## Acknowledgments
