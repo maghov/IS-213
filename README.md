@@ -9,8 +9,8 @@
    * [And coding style tests](#and-coding-styles-tests)
 * [Deployment](#deployment)
 * [Contributing](#contributing)
-    * [No Code Related Contribution](#no-code-related-contributing)
-    * [Code Related Contribution](#code-related-contributing)
+    * [No Code Related Contribution](#no-code-related-contribution)
+    * [Code Related Contribution](#code-related-contribution)
     * [Issues](#issues)
 * [Bug Reporting](#bug-reporting)
 * [Built With](#built-With)
@@ -99,7 +99,7 @@ The following contributions are needed that are not code related:
 We appreciate any type of code contribution made to our project. We currently have no background on working with Xcode and Swift, thus there are many errors or  The current language being used as of May 2017 is Swift 3.0. 
 
 #### Issues 
-The current can be accessed on our issues github tab or by clicking on [This!](https://github.com/maghov/IS-213/issues) link. It consists of features that we wish to implement, and features that are implemented but are not working as desired. 
+The current issues can be accessed on our "Issues" github tab or by [clicking on This!](https://github.com/maghov/IS-213/issues) link. It consists of features that we wish to implement, and features that are implemented but are not working as desired. 
 
 ## Bug Reporting
 
