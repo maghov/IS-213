@@ -93,7 +93,7 @@ We appreciate any type of code contribution within our project. The current lang
 
 #### Issues 
 
-The current [Issues](https://github.com/maghov/IS-213/issues)can be accessed on our issues github tab. It consists of features that we wish to implement, and features that are implemented but are not working as desired. 
+The current can be accessed on our issues github tab or by clicking on [This!](https://github.com/maghov/IS-213/issues) link. It consists of features that we wish to implement, and features that are implemented but are not working as desired. 
 
 ## Built With
 
