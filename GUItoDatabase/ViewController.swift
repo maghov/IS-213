@@ -4,6 +4,7 @@
 //  Created by erik angell berg on 19.04.2017.
 //  Copyright © 2017 erik angell berg. All rights reserved.
 //
+// Viser hvordan Xcode blir koblet sammen med Firebase.
 
 import UIKit
 import FirebaseDatabase
