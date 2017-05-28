@@ -1,11 +1,10 @@
-**Table of Contents**  *generated with [DocToc](http://doctoc.herokuapp.com/)*
-
+# **Table of Contents** 
 - [IS-213](#)
 - [Room Booking Application](#)
-	- [Getting Started](#)
+	- [Getting Started](##)
 		- [Prerequisites](#)
 		- [## Installation](#)
-	- [Running the tests](#)
+	- [Running the tests](##)
 		- [Break down into end to end tests](#)
 		- [And coding style tests](#)
 		- [Contributing](#)
