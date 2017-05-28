@@ -11,9 +11,14 @@ import Firebase
 
 
 
+
 class RoomViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
 
-    var ref: FIRDatabaseReference!
+    
+    var ref = FIRDatabase.database().reference()
+    
+    let prntRef  = FIRDatabase.database().reference().child("list").child(roomList[myIndex].name!)
+
 
       @IBOutlet weak var navigationBar: UINavigationBar!
     
@@ -70,8 +75,9 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         alert.addAction(UIAlertAction(title: "Bekreft", style: UIAlertActionStyle.default, handler: { (action) in
             alert.dismiss(animated: true, completion: nil)
-            self.confirm()
             
+            
+
             
         }))
         
@@ -89,11 +95,8 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
     
 
 
-    func confirm() {
+    func confirmtiElleve() {
         
-        self.ref = FIRDatabase.database().reference()
-        
-        let prntRef  = FIRDatabase.database().reference().child("list").child(roomList[myIndex].name!)
         
         if roomList[myIndex].tielleve! == "Ledig" {
             
@@ -103,7 +106,13 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
             
             prntRef.updateChildValues(["tielleve": "Ledig"])
         
+        } else {
+            print("test")
         }
+    }
+    
+    
+    func confirmelleveTolv() {
             
         if roomList[myIndex].ellevetolv! == "Ledig" {
             
@@ -113,8 +122,6 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
             
             prntRef.updateChildValues(["ellevetolv": "Ledig"])
             
-
-            
             
         } else {
             
@@ -123,8 +130,9 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
             
         }
         
-        self.refreshTable()
+   
     }
+    
     
     func refreshTable() {
         self.tableView.reloadData()
@@ -133,7 +141,16 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
     // method to run when table view cell is tapped
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("You tapped cell number \(indexPath.row).")
-        createAlert(title: "Booke dette rommet?", message: roomList[myIndex].name!)
+        
+        if indexPath.row == 0 {
+        createAlert(title: "Booke dette rommet?", message: roomList[myIndex].name!);           confirmtiElleve()
+        }
+        else if indexPath.row == 1 {
+            createAlert(title: "Booke dette rommet?", message: roomList[myIndex].name!);
+            confirmelleveTolv()
+        }
+        
+        
         
     }
       
