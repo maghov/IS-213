@@ -1,6 +1,6 @@
 # **Table of Contents** 
 - [Room Booking Application](#)
-	- [Getting Started](## Getting Started)
+	- [Getting Started](##Getting Started)
 		- [Prerequisites](###)
 		- [Installation](###)
 	- [Running the tests](## Running the tests)
