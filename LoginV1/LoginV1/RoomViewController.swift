@@ -14,11 +14,13 @@ import Firebase
 
 class RoomViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
 
+    var index = 0
     
     var ref = FIRDatabase.database().reference()
     
     let prntRef  = FIRDatabase.database().reference().child("list").child(roomList[myIndex].name!)
 
+    @IBOutlet weak var tableView: UITableView!
 
       @IBOutlet weak var navigationBar: UINavigationBar!
     
@@ -36,7 +38,7 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
     let cellReuseIdentifier = "cell"
     
     // don't forget to hook this up from the storyboard
-    @IBOutlet var tableView: UITableView!
+    
     
     @IBOutlet weak var labelRoomNumber: UILabel!
 
@@ -48,7 +50,10 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
         navigationBar.topItem?.title = roomList[myIndex].name
         
         labelRoomNumber.text = roomList[myIndex].name
-    }
+        
+
+        }
+    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.time.count
@@ -76,9 +81,17 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
         alert.addAction(UIAlertAction(title: "Bekreft", style: UIAlertActionStyle.default, handler: { (action) in
             alert.dismiss(animated: true, completion: nil)
             
-            
+            if self.index == 0 {
+                self.confirmtiElleve()
 
+            }
             
+            else if self.index == 1 {
+                self.confirmelleveTolv()
+
+            }
+
+    
         }))
         
         alert.addAction(UIAlertAction(title: "Nei", style: UIAlertActionStyle.destructive, handler: { (action) in
@@ -134,22 +147,22 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     
-    func refreshTable() {
-        self.tableView.reloadData()
-    }
+   
     
     // method to run when table view cell is tapped
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("You tapped cell number \(indexPath.row).")
         
         if indexPath.row == 0 {
-        createAlert(title: "Booke dette rommet?", message: roomList[myIndex].name!);           confirmtiElleve()
+            index = indexPath.row
+        createAlert(title: "Booke dette rommet?", message: roomList[myIndex].name!);
+
         }
         else if indexPath.row == 1 {
+            index = indexPath.row
             createAlert(title: "Booke dette rommet?", message: roomList[myIndex].name!);
-            confirmelleveTolv()
+          
         }
-        
         
         
     }
