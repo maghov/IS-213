@@ -25,10 +25,18 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
       @IBOutlet weak var navigationBar: UINavigationBar!
     
     // Data model: These strings will be the data for the table view cells
-
-  let time: [String] = ["10 - 11                                       " + roomList[myIndex].tielleve!,
+   
+  let time: [String] = ["10 - 11                                       " + roomList[myIndex].tiElleve!,
                         
-                        "11 - 12                                       " + roomList[myIndex].ellevetolv!]
+                        "11 - 12                                       " + roomList[myIndex].elleveTolv!,
+                        
+                        "12 - 13                                       " + roomList[myIndex].tolvEtt!,
+                        
+                        "13 - 14                                       " + roomList[myIndex].ettTo!,
+                        
+                        "14 - 15                                       " + roomList[myIndex].toTre!,
+                        
+                        "15 - 16                                       " + roomList[myIndex].treFire!]
                           
     
     
@@ -87,6 +95,26 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
                 self.confirmelleveTolv()
 
             }
+                
+            else if self.index == 2 {
+                self.confirmTolvEtt()
+                
+            }
+                
+            else if self.index == 3 {
+                self.confirmEttTo()
+                
+            }
+            
+            else if self.index == 4 {
+                self.confirmToTre()
+                
+            }
+            
+            else if self.index == 5 {
+                self.confirmTreFire()
+                
+            }
 
     
         }))
@@ -108,13 +136,13 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
     func confirmtiElleve() {
         
         
-        if roomList[myIndex].tielleve! == "Ledig" {
+        if roomList[myIndex].tiElleve == "Ledig" {
             
-            prntRef.updateChildValues(["tielleve": "Opptatt"])
+            prntRef.updateChildValues(["tiElleve": "Opptatt"])
             
-        } else if roomList[myIndex].tielleve! == "Opptatt" {
+        } else if roomList[myIndex].tiElleve == "Opptatt" {
             
-            prntRef.updateChildValues(["tielleve": "Ledig"])
+            prntRef.updateChildValues(["tiElleve": "Ledig"])
         
         } else {
             print("test")
@@ -124,13 +152,13 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func confirmelleveTolv() {
             
-        if roomList[myIndex].ellevetolv! == "Ledig" {
+        if roomList[myIndex].elleveTolv == "Ledig" {
             
-            prntRef.updateChildValues(["ellevetolv": "Opptatt"])
+            prntRef.updateChildValues(["elleveTolv": "Opptatt"])
             
-        } else if roomList[myIndex].ellevetolv! == "Opptatt" {
+        } else if roomList[myIndex].elleveTolv! == "Opptatt" {
             
-            prntRef.updateChildValues(["ellevetolv": "Ledig"])
+            prntRef.updateChildValues(["elleveTolv": "Ledig"])
             
             
         } else {
@@ -141,6 +169,93 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
         }
    
     }
+    
+    func confirmTolvEtt() {
+        
+        if roomList[myIndex].tolvEtt!  == "Ledig" {
+            
+            prntRef.updateChildValues(["tolvEtt": "Opptatt"])
+            
+        } else if roomList[myIndex].tolvEtt! == "Opptatt" {
+            
+            prntRef.updateChildValues(["tolvEtt": "Ledig"])
+            
+            
+        } else {
+            
+            print("test")
+            
+            
+        }
+        
+    }
+    
+    func confirmEttTo() {
+        
+        if roomList[myIndex].ettTo! == "Ledig" {
+            
+            prntRef.updateChildValues(["ettTo": "Opptatt"])
+            
+        } else if roomList[myIndex].ettTo! == "Opptatt" {
+            
+            prntRef.updateChildValues(["ettTo": "Ledig"])
+            
+            
+        } else {
+            
+            print("test")
+            
+            
+        }
+        
+    }
+    
+    func confirmToTre() {
+        
+        if roomList[myIndex].toTre == "Ledig" {
+            
+            prntRef.updateChildValues(["toTre": "Opptatt"])
+            
+        } else if roomList[myIndex].toTre! == "Opptatt" {
+            
+            prntRef.updateChildValues(["toTre": "Ledig"])
+            
+            
+        } else {
+            
+            print("test")
+            
+            
+        }
+        
+    }
+    
+    func confirmTreFire() {
+        
+        if roomList[myIndex].treFire == "Ledig" {
+            
+            prntRef.updateChildValues(["treFire": "Opptatt"])
+            
+        } else if roomList[myIndex].treFire! == "Opptatt" {
+            
+            prntRef.updateChildValues(["treFire": "Ledig"])
+            
+            
+        } else {
+            
+            print("test")
+            
+            
+        }
+        
+    }
+    
+
+
+    
+
+    
+
     
     
     
@@ -162,7 +277,33 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
           
         }
         
+        else if indexPath.row == 2 {
+            index = indexPath.row
+        createAlert(title: "Booke dette rommet?", message: roomList[myIndex].name!);
+        }
         
+        else if indexPath.row == 3 {
+            index = indexPath.row
+            createAlert(title: "Booke dette rommet?", message: roomList[myIndex].name!);
+        }
+            
+        else if indexPath.row == 4 {
+            index = indexPath.row
+            createAlert(title: "Booke dette rommet?", message: roomList[myIndex].name!);
+        }
+        
+        else if indexPath.row == 5 {
+            index = indexPath.row
+            createAlert(title: "Booke dette rommet?", message: roomList[myIndex].name!);
+        }
+    
+        
+        
+        
+
+    
+    
+    
     }
 
     override func didReceiveMemoryWarning() {

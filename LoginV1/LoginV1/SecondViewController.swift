@@ -81,7 +81,7 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
                     let space = roomObject?["space"]
                     let id = roomObject?["id"]
                     let details = roomObject? ["details"]
-                    let tielleve = roomObject? ["tielleve"]
+                    let tiElleve = roomObject? ["tiElleve"]
                     let elleveTolv = roomObject? ["elleveTolv"]
                     let tolvEtt = roomObject? ["tolvEtt"]
                     let ettTo = roomObject? ["ettTo"]
@@ -92,7 +92,7 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
                                          name: name as! String?,
                                          space: space as! String?,
                                          details: details as! String?,
-                                         tielleve: tielleve as! String?,
+                                         tiElleve: tiElleve as! String?,
                                          elleveTolv: elleveTolv as! String?,
                                          tolvEtt: tolvEtt as! String?,
                                          ettTo: ettTo as! String?,

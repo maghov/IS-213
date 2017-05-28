@@ -19,12 +19,12 @@ class RoomModel {
     var treFire: String?
 
     
-    init(id: String?, name: String?, space: String?, details: String?, tielleve:String?,elleveTolv: String?,tolvEtt : String?, ettTo: String?,toTre: String?,treFire: String?) {
+    init(id: String?, name: String?, space: String?, details: String?, tiElleve:String?,elleveTolv: String?,tolvEtt : String?, ettTo: String?,toTre: String?,treFire: String?) {
         self.id = id;
         self.name = name;
         self.space = space;
         self.details = details;
-        self.tiElleve = tielleve;
+        self.tiElleve = tiElleve;
         self.elleveTolv = elleveTolv
         self.tolvEtt = tolvEtt
         self.ettTo = ettTo
