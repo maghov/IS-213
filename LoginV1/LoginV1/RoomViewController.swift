@@ -50,8 +50,6 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
         navigationBar.topItem?.title = roomList[myIndex].name
         
         labelRoomNumber.text = roomList[myIndex].name
-        
-
         }
     
     
@@ -79,11 +77,10 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         
         alert.addAction(UIAlertAction(title: "Bekreft", style: UIAlertActionStyle.default, handler: { (action) in
-            alert.dismiss(animated: true, completion: nil)
+            alert.dismiss(animated: true, completion: self.tableView.reloadData)
             
             if self.index == 0 {
                 self.confirmtiElleve()
-
             }
             
             else if self.index == 1 {
@@ -95,12 +92,12 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
         }))
         
         alert.addAction(UIAlertAction(title: "Nei", style: UIAlertActionStyle.destructive, handler: { (action) in
-            alert.dismiss(animated: true, completion: nil)
+            alert.dismiss(animated: true, completion: self.tableView.reloadData)
             
             
 
         }))
-        self.present(alert, animated: true, completion: nil)
+        self.present(alert, animated: true, completion: self.tableView.reloadData)
 
         
         
@@ -142,9 +139,9 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
             
             
         }
-        
    
     }
+    
     
     
    
@@ -157,20 +154,16 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
             index = indexPath.row
         createAlert(title: "Booke dette rommet?", message: roomList[myIndex].name!);
 
+            
         }
         else if indexPath.row == 1 {
             index = indexPath.row
-            createAlert(title: "Booke dette rommet?", message: roomList[myIndex].name!);
+        createAlert(title: "Booke dette rommet?", message: roomList[myIndex].name!);
           
         }
         
         
     }
-      
-        
-        
-        
-    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
