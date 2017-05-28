@@ -8,6 +8,8 @@
    * [Break down into end to end tests](#break-down-into-end-to-end-tests)
    * [And coding style tests](#and-coding-styles-tests)
 * [Contributing](#contributing)
+    * [No Code Related Contribution](#no-code-related-contributing)
+    * [Code Related Contribution](#code-related-contributing)
 * [Issues](#issues)
 * [Built With](#built-With)
 * [Authors](#authors)
@@ -72,6 +74,8 @@ KOMMER SNART
 ## Contributing
 We appreciate all types of contributors that wish to help us in this project. Programming skills are not a necessity, and people with different types of backgrounds are welcome to contribute. 
 
+#### No Code Related Contribution
+
 The following contributions are needed that are not code related: 
 * Artwork 
 
@@ -80,6 +84,10 @@ Currently the artwork being used are the standard options that come with Xcode, 
 * Documenation
 
 We require contributers that are willing to help us on our [Wiki!](https://github.com/maghov/IS-213/wiki) page. Currently, all the information about this project is written on this ReadMe file, but we would like to have better documantion that documents each aspect of our project. 
+
+#### Code Related Contribution
+
+
 
 ## Issues 
 
@@ -100,7 +108,7 @@ We require contributers that are willing to help us on our [Wiki!](https://githu
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/maghov/IS-213/blob/master/LICENSE.txt) file for details
 
 ## Acknowledgments
 
