@@ -1,3 +1,20 @@
+**Table of Contents**
+
+- [IS-213](#)
+- [Room Booking Application](#)
+	- [Getting Started](#)
+		- [Prerequisites](#)
+		- [## Installation](#)
+	- [Running the tests](#)
+		- [Break down into end to end tests](#)
+		- [And coding style tests](#)
+		- [Contributing](#)
+	- [Issues](#)
+	- [Built With](#)
+	- [Authors](#)
+	- [License](#)
+	- [Acknowledgments](#)
+
 # IS-213
 # Room Booking Application
 
