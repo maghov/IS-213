@@ -1,9 +1,9 @@
 ## Table of Contents
 
-* [Room Booking Application](#Room-Booking-Application)
+* [Room Booking Application](#room-Booking-Application)
 * [Getting Started](#Getting-Started)
-   * [Prerequisites](#Prerequisites)
-   * [Installation](#Installation)
+   * [Prerequisites](#prerequisites)
+   * [Installation](#installation)
    * [Running the tests](#Running-the-tests)
    * [Break down into end to end tests](#Break-down-into-end-to-end-tests)
    * [And coding style tests](#And-coding-styles-tests)
