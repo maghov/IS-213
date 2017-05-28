@@ -6,7 +6,7 @@ target ‘LoginV1’ do
 
   use_frameworks!
  
- 
+  pod 'AZDropdownMenu'
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
   pod ‘Firebase/Database’

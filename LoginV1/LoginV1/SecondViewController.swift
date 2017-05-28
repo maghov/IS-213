@@ -82,8 +82,22 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
                     let id = roomObject?["id"]
                     let details = roomObject? ["details"]
                     let tielleve = roomObject? ["tielleve"]
+                    let elleveTolv = roomObject? ["elleveTolv"]
+                    let tolvEtt = roomObject? ["tolvEtt"]
+                    let ettTo = roomObject? ["ettTo"]
+                    let toTre = roomObject? ["toTre"]
+                    let treFire = roomObject? ["treFire"]
                     
-                    let room = RoomModel(id: id as! String?, name: name as! String?, space: space as! String?, details: details as! String?, tielleve: tielleve as! String?)
+                    let room = RoomModel(id: id as! String?,
+                                         name: name as! String?,
+                                         space: space as! String?,
+                                         details: details as! String?,
+                                         tielleve: tielleve as! String?,
+                                         elleveTolv: elleveTolv as! String?,
+                                         tolvEtt: tolvEtt as! String?,
+                                         ettTo: ettTo as! String?,
+                                         toTre: toTre as! String?,
+                                         treFire: treFire as! String?)
                     roomList.append(room)
                     
                     
