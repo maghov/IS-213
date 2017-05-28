@@ -2,20 +2,20 @@
 
 * [Room Booking Application](#Room-Booking-Application)
 * [Getting Started](#Getting-Started)
- * [Prerequisites](#Prerequisites)
- * [Installation](#Installation)
- * [Running the tests](#Running-the-tests)
- * [Break down into end to end tests](#Break-down-into-end-to-end-tests)
- * [And coding style tests](#And-coding-styles-tests)
- * [Contributing](#Contributing)
- * [Issues](#Issues)
- * [Built With](#Built-With)
- * [Authors](#Authors)
+   * [Prerequisites](#Prerequisites)
+   * [Installation](#Installation)
+   * [Running the tests](#Running-the-tests)
+   * [Break down into end to end tests](#Break-down-into-end-to-end-tests)
+   * [And coding style tests](#And-coding-styles-tests)
+* [Contributing](#Contributing)
+* [Issues](#Issues)
+* [Built With](#Built-With)
+* [Authors](#Authors)
 * [License](#License)
 * [Acknowledgments](#Acknowledgments)
 
 ## IS-213
-# Room Booking Application
+## Room Booking Application
 
 This is an open source project for managing room reservations (focusing currently on only our school which is the University of Agder in Kristiansand, Norway). There are several campus buildings with different equipment and room sizes. Our goal is to optimise the booking system for students by having a way to see whether a room is being used or not making it easier to see which rooms are available. The project is currently a work in progress and is in no way finished. This being an MIT licenced project it is open to the public where 
 
@@ -24,7 +24,7 @@ This is an open source project for managing room reservations (focusing currentl
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-### Prerequisites
+#### Prerequisites
 
 Software that needs to be installed
 ```
@@ -34,7 +34,7 @@ Swift 3
 Firebase 
 ```
 
-### Installation
+#### Installation
 
 In order to get started and help us out in this project certain steps need to be taken to get the program up and running on your computer. Currently, this project is only developed on Xcode and Windows integration has not been implemented as of this moment. 
 This project was written within Xcode version 8.3.2 and using the Swift 3 language, please try to use these versions as they are guaranteed to be compatible with the code available on GitHub, older and or eventual newer versions may have different results, so we recommend sticking to Xcode 8.3.2 and Swift 3.
@@ -57,19 +57,19 @@ This project was written within Xcode version 8.3.2 and using the Swift 3 langua
 
 
 
-## Running the tests
+#### Running the tests
 
 KOMMER SNART
 
-### Break down into end to end tests
+#### Break down into end to end tests
 
 KOMMER SNART
 
-### And coding style tests
+#### And coding style tests
 
 KOMMER SNART
 
-### Contributing
+## Contributing
 We appreciate all types of contributors that wish to help us in this project. Programming skills are not a necessity, and people with different types of backgrounds are welcome to contribute. 
 
 The following contributions are needed that are not code related: 
