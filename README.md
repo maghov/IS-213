@@ -20,7 +20,7 @@
 
 ## IS-213
 ## Room Booking Application
-This is an open source project for managing room reservations (focusing currently on only our school which is the University of Agder in Kristiansand, Norway). There are several campus buildings with different equipment and room sizes. Our goal is to optimise the booking system for students by having a way to see whether a room is being used or not making it easier to see which rooms are available. The project is currently a work in progress and is in no way finished. This being an MIT licenced project it is open to the public where 
+This is an open source project for managing room reservations (focusing currently on only our school which is the University of Agder in Kristiansand, Norway). There are several campus buildings with different equipment and room sizes. Our goal is to optimise the booking system for students by having a way to see whether a room is being used or not making it easier to see which rooms are available. The project is currently a work in progress and is in no way finished. This being an MIT licenced project it is open to the public where people are free and encouraged to help and contribute. This also being a school project, we have taken the oppurtnity to learn a new language, which is Swift 3.1 in our case. We have little to no background of working with Xcode or Swift, so any help on this project is greatly appreciated.
 
 ## Getting Started
 These instructions will help you get the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
@@ -52,7 +52,7 @@ This project was written within Xcode version 8.3.2 and using the Swift 3 langua
 ```$ sudo gem install cocoapods```
 
 ##### The third step is to get Firebase up and running on your system, this is done so by following these steps: 
-[For now, please follow the documentation from the actual fire base google website on how to get it up and running - a more detailed step by step guide for this project is on the to do list]( https://firebase.google.com/docs/ios/setup) - Documentation Firebase
+[For now, please follow the documentation from the actual fire base google website on how to get it up and running - a more detailed step by step guide for this project is on the to do list]( https://firebase.google.com/docs/ios/setup)
 
 ## Deployment 
 Once all the necessary programs are installed on your local machine, you may then clone or download the project directly from our GitHub. This can be done in three different ways
@@ -96,7 +96,7 @@ The following contributions are needed that are not code related:
 
 
 #### Code Related Contribution
-We appreciate any type of code contribution made to our project. We currently have no background on working with Xcode and Swift, thus there are many errors or  The current language being used as of May 2017 is Swift 3.0. 
+We appreciate any type of code contribution made to our project. We currently have very little background on working with Xcode and Swift, thus there are many errors or coding mistakes that we most likely have made. The current language being used as of May 2017 is Swift 3.0, and all contributions made should be written in this language
 
 #### Issues 
 The current issues can be accessed on our "Issues" github tab or by [clicking on This!](https://github.com/maghov/IS-213/issues) link. It consists of features that we wish to implement, and features that are implemented but are not working as desired. 
