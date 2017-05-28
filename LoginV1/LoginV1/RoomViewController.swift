@@ -20,7 +20,8 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     let prntRef  = FIRDatabase.database().reference().child("list").child(roomList[myIndex].name!)
 
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var tableTime: UITableView!
+
 
       @IBOutlet weak var navigationBar: UINavigationBar!
     
@@ -53,7 +54,7 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellReuseIdentifier)
+        self.tableTime.register(UITableViewCell.self, forCellReuseIdentifier: cellReuseIdentifier)
         
         navigationBar.topItem?.title = roomList[myIndex].name
         
@@ -69,7 +70,7 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         // create a new cell if needed or reuse an old one
-        let cell:UITableViewCell = self.tableView.dequeueReusableCell(withIdentifier: cellReuseIdentifier) as UITableViewCell!
+        let cell:UITableViewCell = self.tableTime.dequeueReusableCell(withIdentifier: cellReuseIdentifier) as UITableViewCell!
         
         // set the text from the data model
         cell.textLabel?.text = self.time[indexPath.row]
@@ -85,10 +86,12 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         
         alert.addAction(UIAlertAction(title: "Bekreft", style: UIAlertActionStyle.default, handler: { (action) in
-            alert.dismiss(animated: true, completion: self.tableView.reloadData)
+            alert.dismiss(animated: true, completion: nil)
             
             if self.index == 0 {
+                
                 self.confirmtiElleve()
+            
             }
             
             else if self.index == 1 {
@@ -120,12 +123,12 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
         }))
         
         alert.addAction(UIAlertAction(title: "Nei", style: UIAlertActionStyle.destructive, handler: { (action) in
-            alert.dismiss(animated: true, completion: self.tableView.reloadData)
+            alert.dismiss(animated: true, completion: nil)
             
             
 
         }))
-        self.present(alert, animated: true, completion: self.tableView.reloadData)
+        self.present(alert, animated: true, completion: nil)
 
         
         

@@ -603,8 +603,8 @@
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
-                                    <outlet property="dataSource" destination="e73-jn-Lcf" id="dHz-LT-b0U"/>
-                                    <outlet property="delegate" destination="e73-jn-Lcf" id="0Ss-DO-Smp"/>
+                                    <outlet property="dataSource" destination="e73-jn-Lcf" id="Ax3-Po-QdI"/>
+                                    <outlet property="delegate" destination="e73-jn-Lcf" id="dde-33-acL"/>
                                 </connections>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bygg" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="org-Fx-CvF">
@@ -658,7 +658,7 @@
                     <connections>
                         <outlet property="labelRoomNumber" destination="ygE-LG-hph" id="W6t-2U-gQR"/>
                         <outlet property="navigationBar" destination="ZXq-hx-hCI" id="Dhv-6x-TCw"/>
-                        <outlet property="tableView" destination="7Rr-LF-z48" id="MOA-1j-KXz"/>
+                        <outlet property="tableTime" destination="7Rr-LF-z48" id="ILh-IQ-TTF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7hv-iv-IJa" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -867,7 +867,7 @@
     <inferredMetricsTieBreakers>
         <segue reference="7gj-X2-GnO"/>
         <segue reference="ADM-vE-Cde"/>
-        <segue reference="Ee1-ps-8IE"/>
+        <segue reference="Igb-Wr-TrR"/>
         <segue reference="gaV-SI-Axn"/>
     </inferredMetricsTieBreakers>
 </document>
