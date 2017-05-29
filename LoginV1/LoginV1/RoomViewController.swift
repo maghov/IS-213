@@ -86,18 +86,62 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func createAlertUnbook(title: String, message: String) {
         
-        
-        
         let alertUnbook = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)
         
         
-        alertUnbook.addAction(UIAlertAction(title: "Avbestill", style: UIAlertActionStyle.default, handler: { (action) in
+        alertUnbook.addAction(UIAlertAction(title: "Bekreft", style: UIAlertActionStyle.default, handler: { (action) in
             alertUnbook.dismiss(animated: true, completion: nil)
-
+            
+            if self.index == 0 {
+                
+                print("test")
+            }
+                
+            else if self.index == 1 {
+                self.confirmelleveTolv()
+                
+            }
+                
+            else if self.index == 2 {
+                self.confirmTolvEtt()
+                
+            }
+                
+            else if self.index == 3 {
+                self.confirmEttTo()
+                
+                
+            }
+                
+            else if self.index == 4 {
+                self.confirmToTre()
+                
+            }
+                
+            else if self.index == 5 {
+                self.confirmTreFire()
+                
+            }
+            
+            
+            
+            
+            
+        }))
         
-             }))
-    
+        alertUnbook.addAction(UIAlertAction(title: "Nei", style: UIAlertActionStyle.destructive, handler: { (action) in
+            alertUnbook.dismiss(animated: true, completion: nil)
+            
+            
+            
+        }))
+        self.present(alertUnbook, animated: true, completion: nil)
+        
+        
+        
     }
+    
+    
     
     func createAlert(title: String, message: String) {
         
@@ -109,8 +153,7 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
             
             if self.index == 0 {
                 
-                self.confirmtiElleve()
-                print(userID)
+                print("test")
                    }
             
             else if self.index == 1 {
@@ -139,16 +182,6 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
                 
             }
             
-            
-            
-
-    
-        }))
-        
-        alert.addAction(UIAlertAction(title: "Nei", style: UIAlertActionStyle.destructive, handler: { (action) in
-            alert.dismiss(animated: true, completion: nil)
-            
-            
 
         }))
         self.present(alert, animated: true, completion: nil)
@@ -161,20 +194,22 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
 
     func confirmtiElleve() {
         
-        
         if roomList[myIndex].tiElleve == "Ledig" {
             
             prntRef.updateChildValues(["tiElleve": "Opptatt"])
+            prntRef.updateChildValues(["booketAvTiElleve": userID])
+            
             
         } else if roomList[myIndex].tiElleve == "Opptatt" {
             
-            prntRef.updateChildValues(["tiElleve": "Ledig"])
-        
+            prntRef.updateChildValues(["tiElleve": "Opptatt"])
+            
+            
+            
         } else {
             print("test")
         }
     }
-    
     
     func confirmelleveTolv() {
             
@@ -289,13 +324,23 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     // method to run when table view cell is tapped
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-                
 
-        
+
         if indexPath.row == 0 {
+            
+            if roomList[myIndex].booketAvTiElleve == userID {
+                index = indexPath.row
+                createAlertUnbook(title: "test", message: "test");
+            }
+            else {
             index = indexPath.row
-        createAlert(title: "Booke dette rommet?", message: roomList[myIndex].name!);            
-        }
+            createAlert(title: "Booke dette rommet?", message: roomList[myIndex].name!);
+            }
+            
+                
+    }
+    
+            
         else if indexPath.row == 1 {
             index = indexPath.row
         createAlert(title: "Booke dette rommet?", message: roomList[myIndex].name!);
