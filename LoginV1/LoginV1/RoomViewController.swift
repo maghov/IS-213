@@ -15,6 +15,7 @@ import Firebase
 class RoomViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
 
     var index = 0
+
     
     var ref = FIRDatabase.database().reference()
     
@@ -59,6 +60,8 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
         navigationBar.topItem?.title = roomList[myIndex].name
         
         labelRoomNumber.text = roomList[myIndex].name
+        
+        
         }
     
     
@@ -91,8 +94,8 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
             if self.index == 0 {
                 
                 self.confirmtiElleve()
-            
-            }
+                print(userID)
+                   }
             
             else if self.index == 1 {
                 self.confirmelleveTolv()
@@ -106,6 +109,7 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
                 
             else if self.index == 3 {
                 self.confirmEttTo()
+                
                 
             }
             
@@ -266,13 +270,12 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     // method to run when table view cell is tapped
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("You tapped cell number \(indexPath.row).")
+                
+
         
         if indexPath.row == 0 {
             index = indexPath.row
-        createAlert(title: "Booke dette rommet?", message: roomList[myIndex].name!);
-
-            
+        createAlert(title: "Booke dette rommet?", message: roomList[myIndex].name!);            
         }
         else if indexPath.row == 1 {
             index = indexPath.row
