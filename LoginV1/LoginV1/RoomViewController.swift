@@ -339,7 +339,7 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
             
             if roomList[myIndex].booketAvTiElleve == userID {
                 index = indexPath.row
-                createAlertUnbook(title: "Avbestille?", message: "test");
+                createAlertUnbook(title: "Avbestille?", message: "Rom " + roomList[myIndex].name!);
                 
             }else if roomList[myIndex].tiElleve! == "Opptatt" {
                 createAlert(title: "Rommet er opptatt", message: "Booket av " + roomList[myIndex].booketAvTiElleve!)
