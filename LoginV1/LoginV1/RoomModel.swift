@@ -17,9 +17,10 @@ class RoomModel {
     var ettTo: String?
     var toTre: String?
     var treFire: String?
+    var booketAvTiElleve: String?
 
     
-    init(id: String?, name: String?, space: String?, details: String?, tiElleve:String?,elleveTolv: String?,tolvEtt : String?, ettTo: String?,toTre: String?,treFire: String?) {
+    init(id: String?, name: String?, space: String?, details: String?, tiElleve:String?,elleveTolv: String?,tolvEtt : String?, ettTo: String?,toTre: String?,treFire: String?, booketAvTiElleve: String?) {
         self.id = id;
         self.name = name;
         self.space = space;
@@ -30,6 +31,7 @@ class RoomModel {
         self.ettTo = ettTo
         self.toTre = toTre
         self.treFire = treFire
+        self.booketAvTiElleve = booketAvTiElleve
     }
     
 }

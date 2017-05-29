@@ -9,6 +9,8 @@
 import UIKit
 import FirebaseAuth
 
+let userID = FIRAuth.auth()!.currentUser!.email!
+
 class ViewController: UIViewController, UITextFieldDelegate, UIAlertViewDelegate {
     
     @IBOutlet weak var segmentController: UISegmentedControl!
@@ -28,6 +30,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UIAlertViewDelegate
                     {
                         //Sign in successfull -Send user to Tab bar controller
                         self.performSegue(withIdentifier: "segue1", sender: self)
+                        print(userID)
                     }
                     else
                     {
