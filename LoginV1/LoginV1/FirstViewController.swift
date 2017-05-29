@@ -4,7 +4,7 @@
 //
 //  Created by Magnus Høvik on 18.04.2017.
 //  Copyright © 2017 Magnus Høvik. All rights reserved.
-//
+// FIRST VIEW CONTROLLER DEVELOP TEST KOMMENTAR
 
 import UIKit
 //import Firebase
