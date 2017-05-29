@@ -83,6 +83,22 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
         return cell
     }
     
+    
+    func createAlertUnbook(title: String, message: String) {
+        
+        
+        
+        let alertUnbook = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)
+        
+        
+        alertUnbook.addAction(UIAlertAction(title: "Avbestill", style: UIAlertActionStyle.default, handler: { (action) in
+            alertUnbook.dismiss(animated: true, completion: nil)
+
+        
+             }))
+    
+    }
+    
     func createAlert(title: String, message: String) {
         
         let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)
@@ -122,6 +138,9 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
                 self.confirmTreFire()
                 
             }
+            
+            
+            
 
     
         }))
