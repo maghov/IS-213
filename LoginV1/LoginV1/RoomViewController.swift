@@ -88,7 +88,7 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
         let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)
         
         
-        alert.addAction(UIAlertAction(title: "Bekreft", style: UIAlertActionStyle.default, handler: { (action) in
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: { (action) in
             alert.dismiss(animated: true, completion: nil)
             
             if self.index == 0 {
@@ -146,10 +146,14 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
         if roomList[myIndex].tiElleve == "Ledig" {
             
             prntRef.updateChildValues(["tiElleve": "Opptatt"])
+            prntRef.updateChildValues(["booketAvTiElleve": userID])
+            
             
         } else if roomList[myIndex].tiElleve == "Opptatt" {
             
-            prntRef.updateChildValues(["tiElleve": "Ledig"])
+            prntRef.updateChildValues(["tiElleve": "Opptatt"])
+
+            
         
         } else {
             print("test")
@@ -184,6 +188,7 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
             prntRef.updateChildValues(["tolvEtt": "Opptatt"])
             
         } else if roomList[myIndex].tolvEtt! == "Opptatt" {
+            
             
             prntRef.updateChildValues(["tolvEtt": "Ledig"])
             
@@ -275,7 +280,13 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         if indexPath.row == 0 {
             index = indexPath.row
-        createAlert(title: "Booke dette rommet?", message: roomList[myIndex].name!);            
+            if roomList[myIndex].tiElleve! == "Opptatt" {
+                createAlert(title: "Rommet er opptatt", message: "Booket av " + roomList[myIndex].booketAvTiElleve!)
+            }
+            else {
+                createAlert(title: "Booke dette rommet?", message: roomList[myIndex].name!);
+            }
+        
         }
         else if indexPath.row == 1 {
             index = indexPath.row
