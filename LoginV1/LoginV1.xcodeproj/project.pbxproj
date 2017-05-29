@@ -18,6 +18,7 @@
 		7A4EB9E91ED84BF80094B7B4 /* AddRoomsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4EB9E81ED84BF80094B7B4 /* AddRoomsController.swift */; };
 		7A5BE0DB1EDC4C8700D0011E /* ChooseBuildingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5BE0DA1EDC4C8700D0011E /* ChooseBuildingViewController.swift */; };
 		7AA14E931EB8B33500F9D3B0 /* QRGenetatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA14E921EB8B33500F9D3B0 /* QRGenetatorViewController.swift */; };
+		F90C7E151EDC55FB00ABAE1B /* dropDownMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90C7E141EDC55FB00ABAE1B /* dropDownMenuViewController.swift */; };
 		F952C3EC1EAA1DA900FE79AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F952C3EB1EAA1DA900FE79AA /* AppDelegate.swift */; };
 		F952C3EE1EAA1DA900FE79AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F952C3ED1EAA1DA900FE79AA /* ViewController.swift */; };
 		F952C3F11EAA1DA900FE79AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F952C3EF1EAA1DA900FE79AA /* Main.storyboard */; };
@@ -40,6 +41,7 @@
 		B8932475747EA3C3B8A72935 /* Pods-LoginV1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginV1.release.xcconfig"; path = "Pods/Target Support Files/Pods-LoginV1/Pods-LoginV1.release.xcconfig"; sourceTree = "<group>"; };
 		C825362595086C45609DFD6D /* Pods-LoginV1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginV1.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LoginV1/Pods-LoginV1.debug.xcconfig"; sourceTree = "<group>"; };
 		C927243C2617CBB459AAB364 /* Pods_LoginV1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoginV1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F90C7E141EDC55FB00ABAE1B /* dropDownMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dropDownMenuViewController.swift; sourceTree = "<group>"; };
 		F952C3E81EAA1DA900FE79AA /* LoginV1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginV1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F952C3EB1EAA1DA900FE79AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F952C3ED1EAA1DA900FE79AA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 				11FE30591ED6E95300833871 /* ViewControllerTableViewCell.swift */,
 				7A4EB9E81ED84BF80094B7B4 /* AddRoomsController.swift */,
 				7A5BE0DA1EDC4C8700D0011E /* ChooseBuildingViewController.swift */,
+				F90C7E141EDC55FB00ABAE1B /* dropDownMenuViewController.swift */,
 			);
 			path = LoginV1;
 			sourceTree = "<group>";
@@ -156,7 +159,7 @@
 				TargetAttributes = {
 					F952C3E71EAA1DA900FE79AA = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = 887YJ27ZR8;
+						DevelopmentTeam = 9GJG6L2CD7;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -257,6 +260,7 @@
 				7AA14E931EB8B33500F9D3B0 /* QRGenetatorViewController.swift in Sources */,
 				7A36D9281EB898B50028EA35 /* FirstViewController.swift in Sources */,
 				7A36D92A1EB8A3D60028EA35 /* RoomViewController.swift in Sources */,
+				F90C7E151EDC55FB00ABAE1B /* dropDownMenuViewController.swift in Sources */,
 				7A5BE0DB1EDC4C8700D0011E /* ChooseBuildingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -382,11 +386,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 887YJ27ZR8;
+				DEVELOPMENT_TEAM = 9GJG6L2CD7;
 				INFOPLIST_FILE = LoginV1/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = MagnusHovik.RoomBooking31;
+				PRODUCT_BUNDLE_IDENTIFIER = EirikOliversen.RoomBooking;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
@@ -399,11 +403,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 887YJ27ZR8;
+				DEVELOPMENT_TEAM = 9GJG6L2CD7;
 				INFOPLIST_FILE = LoginV1/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = MagnusHovik.RoomBooking31;
+				PRODUCT_BUNDLE_IDENTIFIER = EirikOliversen.RoomBooking;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
