@@ -84,7 +84,7 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
 
-    func createAlert(title: String, message: String) {
+    func createAlertAvbestill(title: String, message: String) {
         
         
         
