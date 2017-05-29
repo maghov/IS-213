@@ -1,5 +1,4 @@
 PODS:
-  - AZDropdownMenu (1.1.2)
   - Firebase/Auth (3.16.0):
     - Firebase/Core
     - FirebaseAuth (= 3.1.1)
@@ -36,13 +35,11 @@ PODS:
   - GTMSessionFetcher/Core (1.1.9)
 
 DEPENDENCIES:
-  - AZDropdownMenu
   - Firebase/Auth
   - Firebase/Core
   - Firebase/Database
 
 SPEC CHECKSUMS:
-  AZDropdownMenu: 411c1b445fd29bb1e56b219131aaf294ba21b9b6
   Firebase: 21bf4a89d3f01bfbe11adc3a5d934a4a3d3a5fd6
   FirebaseAnalytics: 920e46455f27b0a52a80907a6d9b73ee4bd1c635
   FirebaseAuth: cc8a1824170adbd351edb7f994490a3fb5c18be6
@@ -52,6 +49,6 @@ SPEC CHECKSUMS:
   GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
   GTMSessionFetcher: 5c046c76a1f859bc9c187e918f18e4fc7bb57b5e
 
-PODFILE CHECKSUM: e5509148a78d29f3d6c3dca13a48ed735864bc07
+PODFILE CHECKSUM: c1284c19ba6f41fc34b6288cad60a8d1f8be0a05
 
 COCOAPODS: 1.2.1
