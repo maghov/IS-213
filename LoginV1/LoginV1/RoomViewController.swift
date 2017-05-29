@@ -83,6 +83,10 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
         return cell
     }
     
+<<<<<<< HEAD
+
+    func createAlertAvbestill(title: String, message: String) {
+=======
     
     func createAlertUnbook(title: String, message: String) {
         
@@ -136,13 +140,17 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
             
         }))
         self.present(alertUnbook, animated: true, completion: nil)
+>>>>>>> Develop
         
         
         
     }
     
+<<<<<<< HEAD
+=======
     
     
+>>>>>>> Develop
     func createAlert(title: String, message: String) {
         
         let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)
@@ -210,11 +218,18 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
             
         } else if roomList[myIndex].tiElleve == "Opptatt", roomList[myIndex].booketAvTiElleve == userID {
             
+<<<<<<< HEAD
+            prntRef.updateChildValues(["tiElleve": "Opptatt"])
+
+            
+        
+=======
             prntRef.updateChildValues(["tiElleve": "Ledig"])
             prntRef.updateChildValues(["booketAvTiElleve": ""])
             
             
             
+>>>>>>> Develop
         } else {
             print("test")
         }
@@ -247,6 +262,7 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
             prntRef.updateChildValues(["tolvEtt": "Opptatt"])
             
         } else if roomList[myIndex].tolvEtt! == "Opptatt" {
+            
             
             prntRef.updateChildValues(["tolvEtt": "Ledig"])
             
@@ -336,6 +352,16 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         
         if indexPath.row == 0 {
+<<<<<<< HEAD
+            index = indexPath.row
+            if roomList[myIndex].tiElleve! == "Opptatt" {
+                createAlert(title: "Rommet er opptatt", message: "Booket av " + roomList[myIndex].booketAvTiElleve!)
+            }
+            else {
+                createAlert(title: "Booke dette rommet?", message: roomList[myIndex].name!);
+            }
+        
+=======
             
             if roomList[myIndex].booketAvTiElleve == userID {
                 index = indexPath.row
@@ -350,6 +376,7 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
             }
             
             
+>>>>>>> Develop
         }
             
             

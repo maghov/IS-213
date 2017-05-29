@@ -34,7 +34,9 @@ class ChooseBuildingViewController: UIViewController, UITableViewDelegate, UITab
     }
     
     
-    
+    public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "buldingToRoomSegue", sender: self)
+    }
     
     
 
