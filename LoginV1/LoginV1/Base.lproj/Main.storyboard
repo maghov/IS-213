@@ -302,7 +302,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VZS-rR-se9" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1692" y="255"/>
+            <point key="canvasLocation" x="1470" y="177"/>
         </scene>
         <!--Add Rooms Controller-->
         <scene sceneID="PbB-3E-9mC">
@@ -648,14 +648,15 @@
                     </tabBar>
                     <connections>
                         <segue destination="Zgi-Gj-Spm" kind="relationship" relationship="viewControllers" id="8xg-am-l4b"/>
-                        <segue destination="NIX-sX-71h" kind="relationship" relationship="viewControllers" id="8uT-Ye-XXD"/>
+                        <segue destination="sNO-mk-gHP" kind="show" id="Wc5-xA-Ive"/>
+                        <segue destination="sNO-mk-gHP" kind="relationship" relationship="viewControllers" id="LLe-zw-uaY"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vjk-s6-6MR" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-169" y="247"/>
+            <point key="canvasLocation" x="-202" y="260"/>
         </scene>
-        <!--Choose Building View Controller-->
+        <!--Book-->
         <scene sceneID="XNf-nf-Bid">
             <objects>
                 <viewController id="sNO-mk-gHP" customClass="ChooseBuildingViewController" customModule="LoginV1" customModuleProvider="target" sceneMemberID="viewController">
@@ -667,15 +668,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sNm-un-zkT">
-                                <rect key="frame" x="0.0" y="266" width="375" height="401"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="76" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sNm-un-zkT">
+                                <rect key="frame" x="0.0" y="266" width="375" height="352"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="buildingcell" id="FQd-EW-rpJ">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="buildingcell" rowHeight="76" id="FQd-EW-rpJ">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="76"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FQd-EW-rpJ" id="tNf-Xc-S0r">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="75.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -694,10 +695,15 @@
                             <constraint firstAttribute="trailing" secondItem="sNm-un-zkT" secondAttribute="trailing" id="u16-tG-rTa"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Book" image="second" selectedImage="second" id="7Y9-1G-sRf"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <segue destination="NIX-sX-71h" kind="show" identifier="buldingToRoomSegue" id="aDb-l9-FLH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QbT-jP-5Hi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="640.79999999999995" y="563.56821589205401"/>
+            <point key="canvasLocation" x="709.60000000000002" y="668.81559220389806"/>
         </scene>
         <!--Code View Controller-->
         <scene sceneID="GcO-mR-tMv">
@@ -880,9 +886,10 @@
         <image name="second" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Ken-Z4-H9Z"/>
+        <segue reference="gaV-SI-Axn"/>
         <segue reference="7gj-X2-GnO"/>
-        <segue reference="ADM-vE-Cde"/>
+        <segue reference="aDb-l9-FLH"/>
+        <segue reference="Wc5-xA-Ive"/>
         <segue reference="Igb-Wr-TrR"/>
     </inferredMetricsTieBreakers>
 </document>
