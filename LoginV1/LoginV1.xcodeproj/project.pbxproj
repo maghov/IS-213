@@ -18,6 +18,8 @@
 		7A36D92E1EB8AD2D0028EA35 /* QRScannerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A36D92C1EB8AD2D0028EA35 /* QRScannerController.swift */; };
 		7A4EB9E91ED84BF80094B7B4 /* AddRoomsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4EB9E81ED84BF80094B7B4 /* AddRoomsController.swift */; };
 		7AA14E931EB8B33500F9D3B0 /* QRGenetatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA14E921EB8B33500F9D3B0 /* QRGenetatorViewController.swift */; };
+		7AE3DF691EDD98F7007FF4C6 /* ChooseBuildingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE3DF681EDD98F7007FF4C6 /* ChooseBuildingViewController.swift */; };
+		7AE3DF6D1EDDAE9E007FF4C6 /* BuildingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE3DF6C1EDDAE9E007FF4C6 /* BuildingTableViewCell.swift */; };
 		F952C3EC1EAA1DA900FE79AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F952C3EB1EAA1DA900FE79AA /* AppDelegate.swift */; };
 		F952C3EE1EAA1DA900FE79AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F952C3ED1EAA1DA900FE79AA /* ViewController.swift */; };
 		F952C3F11EAA1DA900FE79AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F952C3EF1EAA1DA900FE79AA /* Main.storyboard */; };
@@ -37,6 +39,8 @@
 		7A36D92C1EB8AD2D0028EA35 /* QRScannerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRScannerController.swift; sourceTree = "<group>"; };
 		7A4EB9E81ED84BF80094B7B4 /* AddRoomsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddRoomsController.swift; sourceTree = "<group>"; };
 		7AA14E921EB8B33500F9D3B0 /* QRGenetatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRGenetatorViewController.swift; sourceTree = "<group>"; };
+		7AE3DF681EDD98F7007FF4C6 /* ChooseBuildingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseBuildingViewController.swift; sourceTree = "<group>"; };
+		7AE3DF6C1EDDAE9E007FF4C6 /* BuildingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuildingTableViewCell.swift; sourceTree = "<group>"; };
 		B8932475747EA3C3B8A72935 /* Pods-LoginV1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginV1.release.xcconfig"; path = "Pods/Target Support Files/Pods-LoginV1/Pods-LoginV1.release.xcconfig"; sourceTree = "<group>"; };
 		C825362595086C45609DFD6D /* Pods-LoginV1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginV1.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LoginV1/Pods-LoginV1.debug.xcconfig"; sourceTree = "<group>"; };
 		C927243C2617CBB459AAB364 /* Pods_LoginV1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoginV1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -117,6 +121,8 @@
 				11FE30591ED6E95300833871 /* ViewControllerTableViewCell.swift */,
 				7A4EB9E81ED84BF80094B7B4 /* AddRoomsController.swift */,
 				7A2576881EDAEA4400702207 /* DropDownMenyTableViewController.swift */,
+				7AE3DF681EDD98F7007FF4C6 /* ChooseBuildingViewController.swift */,
+				7AE3DF6C1EDDAE9E007FF4C6 /* BuildingTableViewCell.swift */,
 			);
 			path = LoginV1;
 			sourceTree = "<group>";
@@ -156,7 +162,7 @@
 				TargetAttributes = {
 					F952C3E71EAA1DA900FE79AA = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = P8MVD2J266;
+						DevelopmentTeam = 887YJ27ZR8;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -246,12 +252,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AE3DF691EDD98F7007FF4C6 /* ChooseBuildingViewController.swift in Sources */,
 				7A36D9261EB898A00028EA35 /* SecondViewController.swift in Sources */,
 				7A2576891EDAEA4400702207 /* DropDownMenyTableViewController.swift in Sources */,
 				F952C3EE1EAA1DA900FE79AA /* ViewController.swift in Sources */,
 				11FE305A1ED6E95300833871 /* ViewControllerTableViewCell.swift in Sources */,
 				118F04C01ED6CF1C0054DAC1 /* RoomModel.swift in Sources */,
 				7A36D92D1EB8AD2D0028EA35 /* QRCodeViewController.swift in Sources */,
+				7AE3DF6D1EDDAE9E007FF4C6 /* BuildingTableViewCell.swift in Sources */,
 				7A4EB9E91ED84BF80094B7B4 /* AddRoomsController.swift in Sources */,
 				F952C3EC1EAA1DA900FE79AA /* AppDelegate.swift in Sources */,
 				7A36D92E1EB8AD2D0028EA35 /* QRScannerController.swift in Sources */,
@@ -382,11 +390,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = P8MVD2J266;
+				DEVELOPMENT_TEAM = 887YJ27ZR8;
 				INFOPLIST_FILE = LoginV1/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = MagnusHovik.RoomBooking3;
+				PRODUCT_BUNDLE_IDENTIFIER = MagnusHovik.RoomBooking31;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
@@ -399,11 +407,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = P8MVD2J266;
+				DEVELOPMENT_TEAM = 887YJ27ZR8;
 				INFOPLIST_FILE = LoginV1/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = MagnusHovik.RoomBooking3;
+				PRODUCT_BUNDLE_IDENTIFIER = MagnusHovik.RoomBooking31;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
