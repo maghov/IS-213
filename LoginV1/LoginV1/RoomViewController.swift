@@ -30,7 +30,7 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     let time: [String] = ["10 - 11                                       " + roomList[myIndex].tiElleve!,
                           
-                          "11 - 12                                       " + roomList[myIndex].elleveTolv!,
+                          "11 - 12                                       " +  roomList[myIndex].elleveTolv!,
                           
                           "12 - 13                                       " + roomList[myIndex].tolvEtt!,
                           
@@ -224,59 +224,60 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
         if roomList[myIndex].elleveTolv == "Ledig" {
             
             prntRef.updateChildValues(["elleveTolv": "Opptatt"])
+            prntRef.updateChildValues(["booketAvElleveTolv": userID])
             
-        } else if roomList[myIndex].elleveTolv! == "Opptatt" {
+            
+        } else if roomList[myIndex].elleveTolv == "Opptatt", roomList[myIndex].booketAvElleveTolv == userID {
             
             prntRef.updateChildValues(["elleveTolv": "Ledig"])
+            prntRef.updateChildValues(["booketAvElleveTolv": ""])
+            
             
             
         } else {
-            
             print("test")
-            
-            
         }
-        
     }
     
     func confirmTolvEtt() {
         
-        if roomList[myIndex].tolvEtt!  == "Ledig" {
+        if roomList[myIndex].tolvEtt == "Ledig" {
             
             prntRef.updateChildValues(["tolvEtt": "Opptatt"])
+            prntRef.updateChildValues(["booketAvTolvEtt": userID])
             
-        } else if roomList[myIndex].tolvEtt! == "Opptatt" {
+            
+        } else if roomList[myIndex].tolvEtt == "Opptatt", roomList[myIndex].booketAvTolvEtt == userID {
             
             prntRef.updateChildValues(["tolvEtt": "Ledig"])
+            prntRef.updateChildValues(["booketAvTolvEtt": ""])
+            
             
             
         } else {
-            
             print("test")
-            
-            
         }
-        
     }
+    
     
     func confirmEttTo() {
         
-        if roomList[myIndex].ettTo! == "Ledig" {
+        if roomList[myIndex].ettTo == "Ledig" {
             
             prntRef.updateChildValues(["ettTo": "Opptatt"])
+            prntRef.updateChildValues(["booketAvEttTo": userID])
             
-        } else if roomList[myIndex].ettTo! == "Opptatt" {
+            
+        } else if roomList[myIndex].ettTo == "Opptatt", roomList[myIndex].booketAvEttTo == userID {
             
             prntRef.updateChildValues(["ettTo": "Ledig"])
+            prntRef.updateChildValues(["booketAvEttTo": ""])
+            
             
             
         } else {
-            
             print("test")
-            
-            
         }
-        
     }
     
     func confirmToTre() {
@@ -284,39 +285,40 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
         if roomList[myIndex].toTre == "Ledig" {
             
             prntRef.updateChildValues(["toTre": "Opptatt"])
+            prntRef.updateChildValues(["booketAvToTre": userID])
             
-        } else if roomList[myIndex].toTre! == "Opptatt" {
+            
+        } else if roomList[myIndex].toTre == "Opptatt", roomList[myIndex].booketAvToTre == userID {
             
             prntRef.updateChildValues(["toTre": "Ledig"])
+            prntRef.updateChildValues(["booketAvToTre": ""])
+            
             
             
         } else {
-            
             print("test")
-            
-            
         }
-        
     }
+
     
     func confirmTreFire() {
         
         if roomList[myIndex].treFire == "Ledig" {
             
             prntRef.updateChildValues(["treFire": "Opptatt"])
+            prntRef.updateChildValues(["booketAvTreFire": userID])
             
-        } else if roomList[myIndex].treFire! == "Opptatt" {
+            
+        } else if roomList[myIndex].treFire == "Opptatt", roomList[myIndex].booketAvTreFire == userID {
             
             prntRef.updateChildValues(["treFire": "Ledig"])
+            prntRef.updateChildValues(["booketAvTreFire": ""])
+            
             
             
         } else {
-            
             print("test")
-            
-            
         }
-        
     }
     
     
@@ -335,16 +337,18 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         
         if indexPath.row == 0 {
+            index = indexPath.row
             
             if roomList[myIndex].booketAvTiElleve == userID {
-                index = indexPath.row
-                createAlertUnbook(title: "Avbestille?", message: "test");
                 
-            }else if roomList[myIndex].tiElleve! == "Opptatt" {
+                createAlertUnbook(title: "Avbestille?", message: "");
+                
+            }
+            else if roomList[myIndex].tiElleve! == "Opptatt" {
                 createAlert(title: "Rommet er opptatt", message: "Booket av " + roomList[myIndex].booketAvTiElleve!)
+                
             }
             else {
-                index = indexPath.row
                 createAlert(title: "Booke dette rommet?", message: roomList[myIndex].name!);
             }
             
@@ -353,30 +357,107 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
             
             
         else if indexPath.row == 1 {
+            
             index = indexPath.row
-            createAlert(title: "Booke dette rommet?", message: roomList[myIndex].name!);
+            
+            if roomList[myIndex].booketAvElleveTolv == userID {
+                
+                createAlertUnbook(title: "Avbestille?", message: "");
+                
+            }
+            else if roomList[myIndex].elleveTolv! == "Opptatt" {
+                createAlert(title: "Rommet er opptatt", message: "Booket av " + roomList[myIndex].booketAvTiElleve!)
+                
+            }
+            else {
+                createAlert(title: "Booke dette rommet?", message: roomList[myIndex].name!);
+            }
+            
             
         }
             
+            
         else if indexPath.row == 2 {
+            
             index = indexPath.row
-            createAlert(title: "Booke dette rommet?", message: roomList[myIndex].name!);
+            
+            if roomList[myIndex].booketAvTolvEtt == userID {
+                
+                createAlertUnbook(title: "Avbestille?", message: "");
+                
+            }
+            else if roomList[myIndex].tolvEtt! == "Opptatt" {
+                createAlert(title: "Rommet er opptatt", message: "Booket av " + roomList[myIndex].booketAvTolvEtt!)
+                
+            }
+            else {
+                createAlert(title: "Booke dette rommet?", message: roomList[myIndex].name!);
+            }
+            
+            
         }
             
         else if indexPath.row == 3 {
+            
             index = indexPath.row
-            createAlert(title: "Booke dette rommet?", message: roomList[myIndex].name!);
+            
+            if roomList[myIndex].booketAvEttTo == userID {
+                
+                createAlertUnbook(title: "Avbestille?", message: "");
+                
+            }
+            else if roomList[myIndex].ettTo! == "Opptatt" {
+                createAlert(title: "Rommet er opptatt", message: "Booket av " + roomList[myIndex].booketAvEttTo!)
+                
+            }
+            else {
+                createAlert(title: "Booke dette rommet?", message: roomList[myIndex].name!);
+            }
+            
+            
         }
             
         else if indexPath.row == 4 {
+            
             index = indexPath.row
-            createAlert(title: "Booke dette rommet?", message: roomList[myIndex].name!);
+            
+            if roomList[myIndex].booketAvToTre == userID {
+                
+                createAlertUnbook(title: "Avbestille?", message: "");
+                
+            }
+            else if roomList[myIndex].toTre! == "Opptatt" {
+                createAlert(title: "Rommet er opptatt", message: "Booket av " + roomList[myIndex].booketAvToTre!)
+                
+            }
+            else {
+                createAlert(title: "Booke dette rommet?", message: roomList[myIndex].name!);
+            }
+            
+            
         }
+
             
         else if indexPath.row == 5 {
+            
             index = indexPath.row
-            createAlert(title: "Booke dette rommet?", message: roomList[myIndex].name!);
+            
+            if roomList[myIndex].booketAvTreFire == userID {
+                
+                createAlertUnbook(title: "Avbestille?", message: "");
+                
+            }
+            else if roomList[myIndex].treFire! == "Opptatt" {
+                createAlert(title: "Rommet er opptatt", message: "Booket av " + roomList[myIndex].booketAvTreFire!)
+                
+            }
+            else {
+                createAlert(title: "Booke dette rommet?", message: roomList[myIndex].name!);
+            }
+            
+            
         }
+
         
         
         

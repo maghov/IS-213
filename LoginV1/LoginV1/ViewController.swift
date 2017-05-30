@@ -9,7 +9,7 @@
 import UIKit
 import FirebaseAuth
 
-let userID = FIRAuth.auth()!.currentUser!.email!
+var userID = FIRAuth.auth()!.currentUser!.email!
 
 class ViewController: UIViewController, UITextFieldDelegate, UIAlertViewDelegate {
     

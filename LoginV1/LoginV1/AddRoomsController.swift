@@ -32,6 +32,11 @@ class AddRoomsController: UIViewController {
         let toTre = "Ledig"
         let treFire = "Ledig"
         let booketAvTiElleve = ""
+        let booketAvElleveTolv = ""
+        let booketAvTolvEtt = ""
+        let booketAvEttTo = ""
+        let booketAvToTre = ""
+        let booketAvTreFire = ""
         
         let room = ["id": key,
                     "name": textFieldRoomName.text! as String,
@@ -43,7 +48,15 @@ class AddRoomsController: UIViewController {
                     "ettTo": ettTo,
                     "toTre": toTre,
                     "treFire": treFire,
-                    "booketAvTiElleve": booketAvTiElleve
+                    "booketAvTiElleve": booketAvTiElleve,
+                    "booketAvElleveTolv": booketAvElleveTolv,
+                    "booketAvTolvEtt": booketAvTolvEtt,
+                    "booketAvEttTo": booketAvEttTo,
+                    "booketAvToTre": booketAvToTre,
+                    "booketAvTreFire": booketAvTreFire
+            
+            
+            
         ]
         
         refRoomsFromDataBase.child(key).setValue(room)
