@@ -89,6 +89,11 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
                     let toTre = roomObject? ["toTre"]
                     let treFire = roomObject? ["treFire"]
                     let booketAvTiElleve = roomObject? ["booketAvTiElleve"]
+                    let booketAvElleveTolv = roomObject? ["booketAvElleveTolv"]
+                    let booketAvTolvEtt = roomObject? ["booketAvTolvEtt"]
+                    let booketAvEttTo = roomObject? ["booketAvEttTo"]
+                    let booketAvToTre = roomObject? ["booketAvToTre"]
+                    let booketAvTreFire = roomObject? ["booketAvTreFire"]
                     
                     let room = RoomModel(id: id as! String?,
                                          name: name as! String?,
@@ -100,7 +105,12 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
                                          ettTo: ettTo as! String?,
                                          toTre: toTre as! String?,
                                          treFire: treFire as! String?,
-                                         booketAvTiElleve: booketAvTiElleve as! String?)
+                                         booketAvTiElleve: booketAvTiElleve as! String?,
+                                         booketAvElleveTolv: booketAvElleveTolv as! String?,
+                                         booketAvTolvEtt: booketAvTolvEtt as! String?,
+                                         booketAvEttTo: booketAvEttTo as! String?,
+                                         booketAvToTre: booketAvToTre as! String?,
+                                         booketAvTreFire: booketAvTreFire as! String?)
                     roomList.append(room)
                     
                     
