@@ -18,9 +18,18 @@ class RoomModel {
     var toTre: String?
     var treFire: String?
     var booketAvTiElleve: String?
+    var booketAvElleveTolv: String?
+    var booketAvTolvEtt: String?
+    var booketAvEttTo: String?
+    var booketAvToTre: String?
+    var booketAvTreFire: String?
+
+
+
+
 
     
-    init(id: String?, name: String?, space: String?, details: String?, tiElleve:String?,elleveTolv: String?,tolvEtt : String?, ettTo: String?,toTre: String?,treFire: String?, booketAvTiElleve: String?) {
+    init(id: String?, name: String?, space: String?, details: String?, tiElleve:String?,elleveTolv: String?,tolvEtt : String?, ettTo: String?,toTre: String?,treFire: String?, booketAvTiElleve: String?, booketAvElleveTolv: String?, booketAvTolvEtt: String?, booketAvEttTo: String?, booketAvToTre: String? , booketAvTreFire: String?) {
         self.id = id;
         self.name = name;
         self.space = space;
@@ -32,6 +41,12 @@ class RoomModel {
         self.toTre = toTre
         self.treFire = treFire
         self.booketAvTiElleve = booketAvTiElleve
+        self.booketAvElleveTolv = booketAvElleveTolv
+        self.booketAvTolvEtt = booketAvTolvEtt
+        self.booketAvEttTo = booketAvEttTo
+        self.booketAvToTre = booketAvToTre
+        self.booketAvTreFire = booketAvTreFire
+        
     }
     
 }

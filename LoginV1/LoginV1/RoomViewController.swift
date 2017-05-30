@@ -93,7 +93,6 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
             alertUnbook.dismiss(animated: true, completion: nil)
             
             if self.index == 0 {
-                
                 self.confirmtiElleve()
             }
                 
