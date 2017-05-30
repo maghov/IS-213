@@ -13,37 +13,37 @@ import Firebase
 
 
 class RoomViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
-    
+
     var index = 0
-    
+
     
     var ref = FIRDatabase.database().reference()
     
     let prntRef  = FIRDatabase.database().reference().child("list").child(roomList[myIndex].name!)
-    
+
     @IBOutlet weak var tableTime: UITableView!
-    
-    
-    @IBOutlet weak var navigationBar: UINavigationBar!
+
+
+      @IBOutlet weak var navigationBar: UINavigationBar!
     
     // Data model: These strings will be the data for the table view cells
-    
-    let time: [String] = ["10 - 11                                       " + roomList[myIndex].tiElleve!,
+   
+  let time: [String] = ["10 - 11                                       " + roomList[myIndex].tiElleve!,
+                        
+                        "11 - 12                                       " + roomList[myIndex].elleveTolv!,
+                        
+                        "12 - 13                                       " + roomList[myIndex].tolvEtt!,
+                        
+                        "13 - 14                                       " + roomList[myIndex].ettTo!,
+                        
+                        "14 - 15                                       " + roomList[myIndex].toTre!,
+                        
+                        "15 - 16                                       " + roomList[myIndex].treFire!]
                           
-                          "11 - 12                                       " + roomList[myIndex].elleveTolv!,
-                          
-                          "12 - 13                                       " + roomList[myIndex].tolvEtt!,
-                          
-                          "13 - 14                                       " + roomList[myIndex].ettTo!,
-                          
-                          "14 - 15                                       " + roomList[myIndex].toTre!,
-                          
-                          "15 - 16                                       " + roomList[myIndex].treFire!]
     
     
-    
-    
-    
+ 
+
     // cell reuse id (cells that scroll out of view can be reused)
     let cellReuseIdentifier = "cell"
     
@@ -51,7 +51,7 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     
     @IBOutlet weak var labelRoomNumber: UILabel!
-    
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -62,7 +62,7 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
         labelRoomNumber.text = roomList[myIndex].name
         
         
-    }
+        }
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -77,16 +77,12 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         // set the text from the data model
         cell.textLabel?.text = self.time[indexPath.row]
-        
+
         
         
         return cell
     }
     
-<<<<<<< HEAD
-
-    func createAlertAvbestill(title: String, message: String) {
-=======
     
     func createAlertUnbook(title: String, message: String) {
         
@@ -140,17 +136,13 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
             
         }))
         self.present(alertUnbook, animated: true, completion: nil)
->>>>>>> Develop
         
         
         
     }
     
-<<<<<<< HEAD
-=======
     
     
->>>>>>> Develop
     func createAlert(title: String, message: String) {
         
         let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)
@@ -161,13 +153,13 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
             
             if self.index == 0 {
                 
-                self.confirmtiElleve()
-                
-            }
-                
+            self.confirmtiElleve()
+
+                   }
+            
             else if self.index == 1 {
                 self.confirmelleveTolv()
-                
+
             }
                 
             else if self.index == 2 {
@@ -180,18 +172,18 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
                 
                 
             }
-                
+            
             else if self.index == 4 {
                 self.confirmToTre()
                 
             }
-                
+            
             else if self.index == 5 {
                 self.confirmTreFire()
                 
             }
             
-            
+
         }))
         
         alert.addAction(UIAlertAction(title: "Avbryt", style: UIAlertActionStyle.destructive, handler: { (action) in
@@ -201,13 +193,13 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
             
         }))
         self.present(alert, animated: true, completion: nil)
-        
+
         
         
     }
     
-    
-    
+
+
     func confirmtiElleve() {
         
         if roomList[myIndex].tiElleve == "Ledig" {
@@ -218,25 +210,18 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
             
         } else if roomList[myIndex].tiElleve == "Opptatt", roomList[myIndex].booketAvTiElleve == userID {
             
-<<<<<<< HEAD
-            prntRef.updateChildValues(["tiElleve": "Opptatt"])
-
-            
-        
-=======
             prntRef.updateChildValues(["tiElleve": "Ledig"])
             prntRef.updateChildValues(["booketAvTiElleve": ""])
             
             
             
->>>>>>> Develop
         } else {
             print("test")
         }
     }
     
     func confirmelleveTolv() {
-        
+            
         if roomList[myIndex].elleveTolv == "Ledig" {
             
             prntRef.updateChildValues(["elleveTolv": "Opptatt"])
@@ -252,7 +237,7 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
             
             
         }
-        
+   
     }
     
     func confirmTolvEtt() {
@@ -262,7 +247,6 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
             prntRef.updateChildValues(["tolvEtt": "Opptatt"])
             
         } else if roomList[myIndex].tolvEtt! == "Opptatt" {
-            
             
             prntRef.updateChildValues(["tolvEtt": "Ledig"])
             
@@ -336,61 +320,50 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
         
     }
     
+
+
+    
+
+    
+
     
     
     
-    
-    
-    
-    
-    
-    
-    
+   
     
     // method to run when table view cell is tapped
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-        
+
+
         if indexPath.row == 0 {
-<<<<<<< HEAD
-            index = indexPath.row
-            if roomList[myIndex].tiElleve! == "Opptatt" {
-                createAlert(title: "Rommet er opptatt", message: "Booket av " + roomList[myIndex].booketAvTiElleve!)
-            }
-            else {
-                createAlert(title: "Booke dette rommet?", message: roomList[myIndex].name!);
-            }
-        
-=======
             
             if roomList[myIndex].booketAvTiElleve == userID {
                 index = indexPath.row
-                createAlertUnbook(title: "Avbestille?", message: "Rom " + roomList[myIndex].name!);
-                
+                createAlertUnbook(title: "Avbestille?", message: "test");
+            
             }else if roomList[myIndex].tiElleve! == "Opptatt" {
-                createAlert(title: "Rommet er opptatt", message: "Booket av " + roomList[myIndex].booketAvTiElleve!)
+            createAlert(title: "Rommet er opptatt", message: "Booket av " + roomList[myIndex].booketAvTiElleve!)
             }
             else {
-                index = indexPath.row
-                createAlert(title: "Booke dette rommet?", message: roomList[myIndex].name!);
+            index = indexPath.row
+            createAlert(title: "Booke dette rommet?", message: roomList[myIndex].name!);
             }
             
-            
->>>>>>> Develop
+                
         }
-            
+    
             
         else if indexPath.row == 1 {
             index = indexPath.row
-            createAlert(title: "Booke dette rommet?", message: roomList[myIndex].name!);
-            
+        createAlert(title: "Booke dette rommet?", message: roomList[myIndex].name!);
+          
         }
-            
+        
         else if indexPath.row == 2 {
             index = indexPath.row
-            createAlert(title: "Booke dette rommet?", message: roomList[myIndex].name!);
+        createAlert(title: "Booke dette rommet?", message: roomList[myIndex].name!);
         }
-            
+        
         else if indexPath.row == 3 {
             index = indexPath.row
             createAlert(title: "Booke dette rommet?", message: roomList[myIndex].name!);
@@ -400,21 +373,21 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
             index = indexPath.row
             createAlert(title: "Booke dette rommet?", message: roomList[myIndex].name!);
         }
-            
+        
         else if indexPath.row == 5 {
             index = indexPath.row
             createAlert(title: "Booke dette rommet?", message: roomList[myIndex].name!);
         }
-        
-        
-        
-        
-        
-        
-        
-        
-    }
     
+        
+        
+        
+
+    
+    
+    
+    }
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
