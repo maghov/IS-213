@@ -356,7 +356,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Velg rom" id="uyH-1l-FIA">
-                                        <barButtonItem key="leftBarButtonItem" title="Tilbake" id="Ihp-0v-aEJ">
+                                        <barButtonItem key="leftBarButtonItem" title="Tilbake" style="done" id="Ihp-0v-aEJ">
                                             <color key="tintColor" red="0.92156862745098034" green="0.21568627450980393" blue="0.21568627450980393" alpha="1" colorSpace="calibratedRGB"/>
                                             <connections>
                                                 <segue destination="vqo-z0-ov3" kind="show" id="eZ2-Zk-mEc"/>
@@ -663,7 +663,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Hurtig book" id="aRN-Hk-4L3">
-                                        <barButtonItem key="leftBarButtonItem" title="Tilbake" id="hl6-Ee-98c">
+                                        <barButtonItem key="leftBarButtonItem" title="Tilbake" style="done" id="hl6-Ee-98c">
                                             <color key="tintColor" red="0.92156862750000001" green="0.2156862745" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" style="plain" systemItem="rewind" id="B1Q-cb-bZN">
@@ -861,10 +861,16 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Book" id="aSs-ia-7dJ">
-                                        <barButtonItem key="leftBarButtonItem" title="Tilbake" id="QNE-ob-dQe">
+                                        <barButtonItem key="leftBarButtonItem" title="Tilbake" style="done" id="QNE-ob-dQe">
                                             <color key="tintColor" red="0.92156862750000001" green="0.2156862745" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
                                             <connections>
                                                 <segue destination="NIX-sX-71h" kind="show" id="Qot-wk-C1p"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="rewind" id="oVC-sC-MBT">
+                                            <color key="tintColor" red="0.92156862750000001" green="0.2156862745" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <action selector="showDropDownMenu:" destination="e73-jn-Lcf" id="jZH-gi-gta"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -925,6 +931,58 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bAM-eD-Q0f">
+                                <rect key="frame" x="205" y="60" width="170" height="603"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ssp-0i-iJO" customClass="PressableButton" customModule="SwiftyButton">
+                                        <rect key="frame" x="0.0" y="0.0" width="170" height="55"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Hjem">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="vqo-z0-ov3" kind="show" id="883-eg-cn0"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PF3-r4-U7e" customClass="PressableButton" customModule="SwiftyButton">
+                                        <rect key="frame" x="0.0" y="63" width="170" height="55"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Hurtigbooking">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="Ill-e6-jK3" kind="show" id="mY1-9N-tMe"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rSm-g0-DB8" customClass="PressableButton" customModule="SwiftyButton">
+                                        <rect key="frame" x="0.0" y="126" width="170" height="55"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Min Profil">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="goK-rW-SC4" customClass="PressableButton" customModule="SwiftyButton">
+                                        <rect key="frame" x="0.0" y="189" width="170" height="55"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="View 1">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uoz-Op-Kac" customClass="PressableButton" customModule="SwiftyButton">
+                                        <rect key="frame" x="0.0" y="252" width="170" height="55"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Log ut">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="logoutButtonPressed:" destination="e73-jn-Lcf" eventType="touchUpInside" id="yDo-me-sc1"/>
+                                            <segue destination="BYZ-38-t0r" kind="show" identifier="segueRoomViewToLogin" id="hAm-sw-IM4"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
@@ -933,6 +991,7 @@
                         <outlet property="labelRoomNumber" destination="ygE-LG-hph" id="W6t-2U-gQR"/>
                         <outlet property="navigationBar" destination="ZXq-hx-hCI" id="Dhv-6x-TCw"/>
                         <outlet property="tableTime" destination="7Rr-LF-z48" id="ILh-IQ-TTF"/>
+                        <outlet property="viewDropDownMenu" destination="bAM-eD-Q0f" id="n8k-dn-b5w"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7hv-iv-IJa" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1565,10 +1624,10 @@
         <image name="second" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="eZ2-Zk-mEc"/>
-        <segue reference="Qot-wk-C1p"/>
-        <segue reference="qN4-Ol-1WJ"/>
-        <segue reference="Zq1-qE-4Q4"/>
         <segue reference="ei4-Tf-Ccl"/>
+        <segue reference="883-eg-cn0"/>
+        <segue reference="Qot-wk-C1p"/>
+        <segue reference="mY1-9N-tMe"/>
+        <segue reference="hAm-sw-IM4"/>
     </inferredMetricsTieBreakers>
 </document>
