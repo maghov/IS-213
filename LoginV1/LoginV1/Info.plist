@@ -5,6 +5,14 @@
 	<key>UIApplicationShortcutItems</key>
 	<array>
 		<dict>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>View reservations</string>
+			<key>UIApplicationShortcutItemIconType</key>
+			<string>UIApplicationShortIconTypeAdd</string>
+			<key>UIApplicationShortcutItemType</key>
+			<string>MagnusHovik.RoomBooking3.seeReservation</string>
+		</dict>
+		<dict>
 			<key>UIApplicationShortcutItemIconType</key>
 			<string>UIApplicationShortIconTypeAdd</string>
 			<key>UIApplicationShortcutItemType</key>
