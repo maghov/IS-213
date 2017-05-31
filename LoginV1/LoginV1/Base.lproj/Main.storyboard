@@ -353,15 +353,74 @@
                                                 <segue destination="vqo-z0-ov3" kind="show" id="eZ2-Zk-mEc"/>
                                             </connections>
                                         </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="rewind" id="ejS-uG-E3q">
+                                            <color key="tintColor" red="0.92156862750000001" green="0.2156862745" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <action selector="showDropDownMenu:" destination="NIX-sX-71h" id="Cyz-in-3Nm"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gV8-9A-QUO">
+                                <rect key="frame" x="205" y="60" width="170" height="603"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1jd-Ub-PDR" customClass="PressableButton" customModule="SwiftyButton">
+                                        <rect key="frame" x="0.0" y="0.0" width="170" height="55"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Hjem">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="vqo-z0-ov3" kind="show" id="CCN-Jr-HnX"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v4K-n3-JIx" customClass="PressableButton" customModule="SwiftyButton">
+                                        <rect key="frame" x="0.0" y="63" width="170" height="55"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Hurtigbooking">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="Ill-e6-jK3" kind="show" id="qN4-Ol-1WJ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uOa-8W-m2u" customClass="PressableButton" customModule="SwiftyButton">
+                                        <rect key="frame" x="0.0" y="126" width="170" height="55"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Min Profil">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="azU-OM-wGD" customClass="PressableButton" customModule="SwiftyButton">
+                                        <rect key="frame" x="0.0" y="189" width="170" height="55"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="View 1">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xro-7H-bg2" customClass="PressableButton" customModule="SwiftyButton">
+                                        <rect key="frame" x="0.0" y="252" width="170" height="55"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Log ut">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="logoutButtonPressed:" destination="NIX-sX-71h" eventType="touchUpInside" id="1tn-vc-jy2"/>
+                                            <segue destination="BYZ-38-t0r" kind="show" identifier="SegueChooseRoomToLogin" id="Zq1-qE-4Q4"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="tblRooms" destination="tsf-Dj-e08" id="Xrj-DB-VKX"/>
+                        <outlet property="viewDropDownMenu" destination="gV8-9A-QUO" id="gJa-mo-mcX"/>
                         <segue destination="e73-jn-Lcf" kind="show" identifier="segue" id="Igb-Wr-TrR"/>
                     </connections>
                 </viewController>
@@ -1496,8 +1555,8 @@
     <inferredMetricsTieBreakers>
         <segue reference="Wvh-Re-vHZ"/>
         <segue reference="eZ2-Zk-mEc"/>
-        <segue reference="G31-lM-Ym7"/>
-        <segue reference="2ab-pE-9KS"/>
+        <segue reference="qN4-Ol-1WJ"/>
+        <segue reference="Zq1-qE-4Q4"/>
         <segue reference="ei4-Tf-Ccl"/>
     </inferredMetricsTieBreakers>
 </document>
