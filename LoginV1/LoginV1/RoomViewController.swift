@@ -14,6 +14,8 @@ import Firebase
 
 class RoomViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
+    @IBOutlet weak var viewDropDownMenu: UIView!
+    
     var index = 0
     
     
@@ -55,13 +57,29 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        viewDropDownMenu.isHidden = true
+        
         self.tableTime.register(UITableViewCell.self, forCellReuseIdentifier: cellReuseIdentifier)
         
         navigationBar.topItem?.title = roomList[myIndex].name
         
         labelRoomNumber.text = roomList[myIndex].name
         
-        
+    }
+    
+    @IBAction func showDropDownMenu(_ sender: UIBarButtonItem) {
+        if (viewDropDownMenu.isHidden == true){
+            viewDropDownMenu.isHidden = false
+        }
+        else if (viewDropDownMenu.isHidden == false){
+            viewDropDownMenu.isHidden = true
+        }
+    }
+    
+    @IBAction func logoutButtonPressed(_ sender: UIButton) {
+        try! FIRAuth.auth()?.signOut()
+        performSegue(withIdentifier: "segueRoomViewToLogin", sender: self)
     }
     
     
