@@ -21,6 +21,7 @@
 		7AE3DF691EDD98F7007FF4C6 /* ChooseBuildingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE3DF681EDD98F7007FF4C6 /* ChooseBuildingViewController.swift */; };
 		7AE3DF6D1EDDAE9E007FF4C6 /* BuildingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE3DF6C1EDDAE9E007FF4C6 /* BuildingTableViewCell.swift */; };
 		F90C01A01EDF0ED100EDB58D /* dropDownMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90C019F1EDF0ED100EDB58D /* dropDownMenuViewController.swift */; };
+		F90C01A21EDF240D00EDB58D /* QuickBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90C01A11EDF240D00EDB58D /* QuickBookViewController.swift */; };
 		F952C3EC1EAA1DA900FE79AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F952C3EB1EAA1DA900FE79AA /* AppDelegate.swift */; };
 		F952C3EE1EAA1DA900FE79AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F952C3ED1EAA1DA900FE79AA /* ViewController.swift */; };
 		F952C3F11EAA1DA900FE79AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F952C3EF1EAA1DA900FE79AA /* Main.storyboard */; };
@@ -46,6 +47,7 @@
 		C825362595086C45609DFD6D /* Pods-LoginV1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginV1.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LoginV1/Pods-LoginV1.debug.xcconfig"; sourceTree = "<group>"; };
 		C927243C2617CBB459AAB364 /* Pods_LoginV1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoginV1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F90C019F1EDF0ED100EDB58D /* dropDownMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dropDownMenuViewController.swift; sourceTree = "<group>"; };
+		F90C01A11EDF240D00EDB58D /* QuickBookViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuickBookViewController.swift; sourceTree = "<group>"; };
 		F952C3E81EAA1DA900FE79AA /* LoginV1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginV1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F952C3EB1EAA1DA900FE79AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F952C3ED1EAA1DA900FE79AA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 				7AE3DF681EDD98F7007FF4C6 /* ChooseBuildingViewController.swift */,
 				7AE3DF6C1EDDAE9E007FF4C6 /* BuildingTableViewCell.swift */,
 				F90C019F1EDF0ED100EDB58D /* dropDownMenuViewController.swift */,
+				F90C01A11EDF240D00EDB58D /* QuickBookViewController.swift */,
 			);
 			path = LoginV1;
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 				7AA14E931EB8B33500F9D3B0 /* QRGenetatorViewController.swift in Sources */,
 				7A36D9281EB898B50028EA35 /* FirstViewController.swift in Sources */,
 				7A36D92A1EB8A3D60028EA35 /* RoomViewController.swift in Sources */,
+				F90C01A21EDF240D00EDB58D /* QuickBookViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -159,9 +159,6 @@
                                 <state key="normal" title="MakeQRCode">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
-                                <connections>
-                                    <segue destination="fGy-pz-fws" kind="show" id="4PO-ot-4ma"/>
-                                </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="B55-RQ-j4Y">
                                 <rect key="frame" x="0.0" y="332" width="375" height="286"/>
@@ -232,6 +229,9 @@
                                         <state key="normal" title="Hjem">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="Zgi-Gj-Spm" kind="show" id="86B-S9-i4L"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qAI-pc-JWH" customClass="PressableButton" customModule="SwiftyButton">
                                         <rect key="frame" x="0.0" y="63" width="170" height="55"/>
@@ -518,10 +518,10 @@
             </objects>
             <point key="canvasLocation" x="904.79999999999995" y="669.71514242878561"/>
         </scene>
-        <!--View Controller-->
+        <!--Quick Book View Controller-->
         <scene sceneID="gBf-Ld-3sd">
             <objects>
-                <viewController id="Ill-e6-jK3" sceneMemberID="viewController">
+                <viewController id="Ill-e6-jK3" customClass="QuickBookViewController" customModule="LoginV1" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="oir-Mb-jsz"/>
                         <viewControllerLayoutGuide type="bottom" id="dqu-df-lQ1"/>
@@ -536,6 +536,12 @@
                                 <items>
                                     <navigationItem title="Hurtig book" id="aRN-Hk-4L3">
                                         <barButtonItem key="leftBarButtonItem" title="Tilbake" id="hl6-Ee-98c"/>
+                                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="rewind" id="B1Q-cb-bZN">
+                                            <color key="tintColor" red="0.92156862750000001" green="0.2156862745" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <action selector="showDropDownMenu:" destination="Ill-e6-jK3" id="9ch-L4-JKA"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -633,11 +639,66 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="J6V-h2-MbU">
+                                <rect key="frame" x="205" y="64" width="170" height="607"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s30-E0-Gmt" customClass="PressableButton" customModule="SwiftyButton">
+                                        <rect key="frame" x="0.0" y="0.0" width="170" height="55"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Hjem">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="Zgi-Gj-Spm" kind="show" id="zA7-xL-h9R"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a19-Og-tdf" customClass="PressableButton" customModule="SwiftyButton">
+                                        <rect key="frame" x="0.0" y="63" width="170" height="55"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Hurtigbooking">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="Ill-e6-jK3" kind="show" id="UDv-6i-mfr"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t12-lX-U27" customClass="PressableButton" customModule="SwiftyButton">
+                                        <rect key="frame" x="0.0" y="126" width="170" height="55"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Min Profil">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X3m-NY-kLY" customClass="PressableButton" customModule="SwiftyButton">
+                                        <rect key="frame" x="0.0" y="189" width="170" height="55"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="View 1">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mMV-FZ-atB" customClass="PressableButton" customModule="SwiftyButton">
+                                        <rect key="frame" x="0.0" y="252" width="170" height="55"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Log ut">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="logoutButtonPressed:" destination="Ill-e6-jK3" eventType="touchUpInside" id="LYr-Ed-IiL"/>
+                                            <action selector="logoutButtonPressed:" destination="Zgi-Gj-Spm" eventType="touchUpInside" id="VHi-Ab-KmF"/>
+                                            <segue destination="BYZ-38-t0r" kind="show" identifier="quickBookToLogin" id="1z8-ni-pIF"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="buttonLogout" destination="mMV-FZ-atB" id="4Td-KC-VRL"/>
                         <outlet property="searchDisplayController" destination="AJq-OJ-bgB" id="nzR-D7-lpN"/>
+                        <outlet property="viewDropDownMenu" destination="J6V-h2-MbU" id="iPs-1j-fGG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wwt-XL-B1O" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -651,7 +712,7 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="-2606" y="1303"/>
+            <point key="canvasLocation" x="-1942" y="1404"/>
         </scene>
         <!--Room View Controller-->
         <scene sceneID="gCV-yZ-djg">
@@ -1369,12 +1430,13 @@
         <image name="cross" width="40" height="40"/>
         <image name="first" width="30" height="30"/>
         <image name="focus" width="150" height="150"/>
-        <image name="noimage" width="16" height="16"/>
         <image name="second" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="8xg-am-l4b"/>
-        <segue reference="gaV-SI-Axn"/>
+        <segue reference="1z8-ni-pIF"/>
+        <segue reference="WsW-5S-0sC"/>
+        <segue reference="zA7-xL-h9R"/>
+        <segue reference="xX9-9R-kKi"/>
         <segue reference="Wvh-Re-vHZ"/>
         <segue reference="XlB-7t-0nn"/>
         <segue reference="ei4-Tf-Ccl"/>
