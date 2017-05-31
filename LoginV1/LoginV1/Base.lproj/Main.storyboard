@@ -270,6 +270,14 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MVp-zX-vjW">
+                                <rect key="frame" x="33" y="102" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="fGy-pz-fws" kind="show" id="jrr-cb-p0l"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -1430,15 +1438,15 @@
         <image name="cross" width="40" height="40"/>
         <image name="first" width="30" height="30"/>
         <image name="focus" width="150" height="150"/>
+        <image name="noimage" width="16" height="16"/>
         <image name="second" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="1z8-ni-pIF"/>
-        <segue reference="WsW-5S-0sC"/>
         <segue reference="zA7-xL-h9R"/>
-        <segue reference="xX9-9R-kKi"/>
-        <segue reference="Wvh-Re-vHZ"/>
+        <segue reference="WsW-5S-0sC"/>
+        <segue reference="gaV-SI-Axn"/>
         <segue reference="XlB-7t-0nn"/>
+        <segue reference="Wvh-Re-vHZ"/>
         <segue reference="ei4-Tf-Ccl"/>
     </inferredMetricsTieBreakers>
 </document>
