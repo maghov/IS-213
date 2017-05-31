@@ -198,10 +198,10 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="UiA Booking" id="Exf-ll-L0M">
-                                        <barButtonItem key="leftBarButtonItem" title="Logg ut" id="gp7-oK-5ma">
-                                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="rewind" id="8mD-l8-uSk">
+                                            <color key="tintColor" red="0.92156862750000001" green="0.2156862745" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
                                             <connections>
-                                                <action selector="buttonLogOut:" destination="Zgi-Gj-Spm" id="7Zt-E3-1XU"/>
+                                                <action selector="showDropDownMenu:" destination="Zgi-Gj-Spm" id="UKf-Px-0Nw"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -222,12 +222,61 @@
                                     <segue destination="dwS-td-pY3" kind="showDetail" id="1rt-YC-YaG"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zj4-bF-ckO">
+                                <rect key="frame" x="205" y="60" width="170" height="607"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gsT-NQ-JbN" customClass="PressableButton" customModule="SwiftyButton">
+                                        <rect key="frame" x="0.0" y="0.0" width="170" height="55"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Hjem">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qAI-pc-JWH" customClass="PressableButton" customModule="SwiftyButton">
+                                        <rect key="frame" x="0.0" y="63" width="170" height="55"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Hurtigbooking">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="Ill-e6-jK3" kind="show" id="WsW-5S-0sC"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XrF-gZ-mgC" customClass="PressableButton" customModule="SwiftyButton">
+                                        <rect key="frame" x="0.0" y="126" width="170" height="55"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Min Profil">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gjS-5G-ykB" customClass="PressableButton" customModule="SwiftyButton">
+                                        <rect key="frame" x="0.0" y="189" width="170" height="55"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="View 1">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ekm-t0-wei" customClass="PressableButton" customModule="SwiftyButton">
+                                        <rect key="frame" x="0.0" y="252" width="170" height="55"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Log ut">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="logoutButtonPressed:" destination="Zgi-Gj-Spm" eventType="touchUpInside" id="JJf-dr-e8e"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="first" selectedImage="first" id="ugz-ZL-9c7"/>
                     <connections>
-                        <outlet property="buttonLogOut" destination="gp7-oK-5ma" id="AFY-Gx-xWu"/>
+                        <outlet property="buttonLogOut" destination="Ekm-t0-wei" id="9pB-63-eDy"/>
+                        <outlet property="viewDropDownMenu" destination="zj4-bF-ckO" id="9XV-pU-GJZ"/>
                         <segue destination="BYZ-38-t0r" kind="showDetail" identifier="segueMainToLogin" id="gaV-SI-Axn"/>
                     </connections>
                 </viewController>
@@ -1029,6 +1078,7 @@
                                 <items>
                                     <navigationItem title="Title" id="HX0-Hf-TQh">
                                         <barButtonItem key="rightBarButtonItem" style="plain" systemItem="rewind" id="81h-dh-JF4">
+                                            <color key="tintColor" red="0.92156862745098034" green="0.21568627450980393" blue="0.21568627450980393" alpha="1" colorSpace="calibratedRGB"/>
                                             <connections>
                                                 <action selector="showDropdownMenu:" destination="1nX-Zw-azx" id="q1P-2k-8u6"/>
                                             </connections>
