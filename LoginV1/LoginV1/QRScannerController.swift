@@ -89,6 +89,8 @@ class QRScannerController: UIViewController, AVCaptureMetadataOutputObjectsDeleg
         // Dispose of any resources that can be recreated.
     }
     
+    
+    
     func createAlertQR(title: String, message: String) {
         
         let alertQR = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)
@@ -96,15 +98,21 @@ class QRScannerController: UIViewController, AVCaptureMetadataOutputObjectsDeleg
         
         alertQR.addAction(UIAlertAction(title: "Bekreft", style: UIAlertActionStyle.default, handler: { (action) in
             alertQR.dismiss(animated: true, completion: nil)
+            if 1 == 1{
+            
+            self.confirmBook()
+            }
             
              }))
         
         self.present(alertQR, animated: true, completion: nil)
         
-        
-        
     }
-
+    
+  
+    func confirmBook(){
+        performSegue(withIdentifier: "segueNew", sender: self)
+    }
 
 
     
