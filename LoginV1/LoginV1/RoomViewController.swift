@@ -198,7 +198,6 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     
-    
     func confirmtiElleve() {
         
         if roomList[myIndex].tiElleve == "Ledig" {
