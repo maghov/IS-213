@@ -10,15 +10,28 @@ import UIKit
 //import Fvarbase
 import FirebaseAuth
 
-class FirstViewController: UIViewController{
+class FirstViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+let bookingList = ["Bygg 47 Rom 105 Mandag kl 11-12", "Bygg 47 Rom 105 Tirsdag kl 11-12"]
+    
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+          return bookingList.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let yourBookings = UITableViewCell (style: UITableViewCellStyle.default, reuseIdentifier: "yourBookings")
+        yourBookings.textLabel?.text = bookingList[indexPath.row]
+        return yourBookings
+    }
+    
+
     
     @IBOutlet weak var buttonLogOut: UIBarButtonItem!
     @IBAction func buttonLogOut(_ sender: UIBarButtonItem) {
         try! FIRAuth.auth()?.signOut()
         performSegue(withIdentifier: "segueMainToLogin", sender: self)
     }
-    
-    
     
     
     

@@ -24,7 +24,7 @@ let buildingList = ["Bygg 47", "Bygg 48", "Bygg 49", "Bygg 50", "Bygg 51"]
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let buildingCell = tableView.dequeueReusableCell(withIdentifier: "buildingCell", for: indexPath) as!ViewControllerTableViewCell
+        let buildingCell = UITableViewCell (style: UITableViewCellStyle.default, reuseIdentifier: "buildingCell")
         buildingCell.textLabel?.text = buildingList[indexPath.row]
         return buildingCell
     }
