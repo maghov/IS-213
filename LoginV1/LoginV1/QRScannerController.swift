@@ -104,7 +104,7 @@ class QRScannerController: UIViewController, AVCaptureMetadataOutputObjectsDeleg
             self.confirmBook()
             }
            else {
-            print("dette gikk ikke")
+            print("Feil QR-kode.")
                 }
             
              }))

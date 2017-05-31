@@ -9,15 +9,31 @@
 import UIKit
 import FirebaseAuth
 
-var userID = FIRAuth.auth()!.currentUser!.email!
 
+var userID = FIRAuth.auth()!.currentUser!.email!
 class ViewController: UIViewController, UITextFieldDelegate, UIAlertViewDelegate {
+    
+    
+    @IBAction func switchAutoLogOn(_ sender: UISwitch) {
+        if sender.isOn == true {
+                autoLogIn()
+        }
+        else {
+            notAutoLogIn()
+        }
+        
+    
+    }
     
     @IBOutlet weak var segmentController: UISegmentedControl!
     @IBOutlet weak var emailText: UITextField!
     @IBOutlet weak var passwordText: UITextField!
     @IBOutlet weak var actionButton: UIButton!
     @IBOutlet weak var confirmPasswordText: UITextField!
+    
+    
+    
+    
     
     @IBAction func action(_ sender: UIButton) {
         
@@ -88,6 +104,10 @@ class ViewController: UIViewController, UITextFieldDelegate, UIAlertViewDelegate
             self.present(alert, animated: true, completion: nil)
         }
     }
+    
+    
+    
+    
     @IBAction func SegmentControllerView(_ sender: UISegmentedControl) {
     
         if segmentController.selectedSegmentIndex == 0 {
@@ -100,15 +120,25 @@ class ViewController: UIViewController, UITextFieldDelegate, UIAlertViewDelegate
         }
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(true)
+    func autoLogIn(){
         if FIRAuth.auth()?.currentUser != nil {
             performSegue(withIdentifier: "segue1", sender: self)
         }
     }
     
     
+    func notAutoLogIn(){
+        if FIRAuth.auth()?.currentUser == nil{
+            
+       try! FIRAuth.auth()?.signOut()
+        }}
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+            if FIRAuth.auth()?.currentUser != nil {
+                performSegue(withIdentifier: "segue1", sender: self)
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
