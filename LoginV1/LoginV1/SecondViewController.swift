@@ -15,11 +15,30 @@ var myIndex = Int()
 
 class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    
+    @IBOutlet weak var viewDropDownMenu: UIView!
     @IBOutlet weak var textFieldSpace: UITextField!
     @IBOutlet weak var textFieldName: UITextField!
     @IBOutlet weak var textFieldDetails: UITextField!
     @IBOutlet weak var tblRooms: UITableView!
+    
+    @IBAction func showDropDownMenu(_ sender: UIBarButtonItem) {
+        if (viewDropDownMenu.isHidden == true){
+            viewDropDownMenu.isHidden = false
+        }
+        else if (viewDropDownMenu.isHidden == false){
+            viewDropDownMenu.isHidden = true
+        }
+    }
+    
+    @IBAction func logoutButtonPressed(_ sender: UIButton) {
+        try! FIRAuth.auth()?.signOut()
+        performSegue(withIdentifier: "SegueChooseRoomToLogin", sender: self)
+    }
+    
+    
+    
+    
+    
     @IBAction func buttonAddRoom(_ sender: UIButton) {
         addRoom()
     }
@@ -68,7 +87,8 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        viewDropDownMenu.isHidden = true
+        
         refRooms = FIRDatabase.database().reference().child("list")
         
         refRooms.observe(FIRDataEventType.value, with:{(snapshot) in
