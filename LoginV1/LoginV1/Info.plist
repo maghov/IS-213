@@ -2,25 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>UIApplicationShortcutItems</key>
-	<array>
-		<dict>
-			<key>UIApplicationShortcutItemTitle</key>
-			<string>View reservations</string>
-			<key>UIApplicationShortcutItemIconType</key>
-			<string>UIApplicationShortIconTypeAdd</string>
-			<key>UIApplicationShortcutItemType</key>
-			<string>MagnusHovik.RoomBooking3.seeReservation</string>
-		</dict>
-		<dict>
-			<key>UIApplicationShortcutItemIconType</key>
-			<string>UIApplicationShortIconTypeAdd</string>
-			<key>UIApplicationShortcutItemType</key>
-			<string>MagnusHovik.RoomBooking3.chooseBuilding</string>
-			<key>UIApplicationShortcutItemTitle</key>
-			<string>Choose building</string>
-		</dict>
-	</array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
@@ -41,6 +22,25 @@
 	<true/>
 	<key>NSCameraUsageDescription</key>
 	<string>This device needs access to your camera</string>
+	<key>UIApplicationShortcutItems</key>
+	<array>
+		<dict>
+			<key>UIApplicationShortcutItemIconType</key>
+			<string>UIApplicationShortIconTypeAdd</string>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>View reservations</string>
+			<key>UIApplicationShortcutItemType</key>
+			<string>MagnusHovik.RoomBooking3.seeReservation</string>
+		</dict>
+		<dict>
+			<key>UIApplicationShortcutItemIconType</key>
+			<string>UIApplicationShortIconTypeAdd</string>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>Choose building</string>
+			<key>UIApplicationShortcutItemType</key>
+			<string>MagnusHovik.RoomBooking3.chooseBuilding</string>
+		</dict>
+	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

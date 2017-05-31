@@ -162,7 +162,7 @@
 				TargetAttributes = {
 					F952C3E71EAA1DA900FE79AA = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = P8MVD2J266;
+						DevelopmentTeam = 887YJ27ZR8;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -390,11 +390,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = P8MVD2J266;
+				DEVELOPMENT_TEAM = 887YJ27ZR8;
 				INFOPLIST_FILE = LoginV1/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = MagnusHovik.RoomBooking3;
+				PRODUCT_BUNDLE_IDENTIFIER = MagnusHovik.RoomBooking31;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
@@ -407,11 +407,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = P8MVD2J266;
+				DEVELOPMENT_TEAM = 887YJ27ZR8;
 				INFOPLIST_FILE = LoginV1/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = MagnusHovik.RoomBooking3;
+				PRODUCT_BUNDLE_IDENTIFIER = MagnusHovik.RoomBooking31;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;

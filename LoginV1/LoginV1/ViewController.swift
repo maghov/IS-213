@@ -100,6 +100,13 @@ class ViewController: UIViewController, UITextFieldDelegate, UIAlertViewDelegate
         }
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        if FIRAuth.auth()?.currentUser != nil {
+            performSegue(withIdentifier: "segue1", sender: self)
+        }
+    }
+    
     
     
     
