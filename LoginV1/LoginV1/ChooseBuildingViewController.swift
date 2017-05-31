@@ -11,9 +11,23 @@ import Firebase
 
 
 class ChooseBuildingViewController: UIViewController, UITableViewDataSource, UITableViewDelegate  {
+    @IBOutlet weak var viewDropDownMenu: UIView!
     
 let buildingList = ["Bygg 47", "Bygg 48", "Bygg 49", "Bygg 50", "Bygg 51"]
 
+    @IBAction func showDropDownMenu(_ sender: UIBarButtonItem) {
+        if (viewDropDownMenu.isHidden == true){
+            viewDropDownMenu.isHidden = false
+        }
+        else if (viewDropDownMenu.isHidden == false){
+            viewDropDownMenu.isHidden = true
+        }
+    }
+    
+    @IBAction func logoutButtonPressed(_ sender: UIButton) {
+        try! FIRAuth.auth()?.signOut()
+        performSegue(withIdentifier: "seguechooseBuildingToLogin", sender: self)
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
@@ -41,8 +55,7 @@ let buildingList = ["Bygg 47", "Bygg 48", "Bygg 49", "Bygg 50", "Bygg 51"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        viewDropDownMenu.isHidden = true
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
