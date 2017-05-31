@@ -91,6 +91,25 @@ class QRScannerController: UIViewController, AVCaptureMetadataOutputObjectsDeleg
         // Dispose of any resources that can be recreated.
     }
     
+    func createAlertQR(title: String, message: String) {
+        
+        let alertQR = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)
+        
+        
+        alertQR.addAction(UIAlertAction(title: "Bekreft", style: UIAlertActionStyle.default, handler: { (action) in
+            alertQR.dismiss(animated: true, completion: nil)
+            
+             }))
+        
+        self.present(alertQR, animated: true, completion: nil)
+        
+        
+        
+    }
+
+
+
+    
     func captureOutput(_ captureOutput: AVCaptureOutput!, didOutputMetadataObjects metadataObjects: [Any]!, from connection: AVCaptureConnection!) {
         
         // Check if the metadataObjects array is not nil and it contains at least one object.
@@ -108,8 +127,10 @@ class QRScannerController: UIViewController, AVCaptureMetadataOutputObjectsDeleg
             let barCodeObject = videoPreviewLayer?.transformedMetadataObject(for: metadataObj)
             qrCodeFrameView?.frame = barCodeObject!.bounds
             
+            
             if metadataObj.stringValue != nil {
                 messageLabel.text = metadataObj.stringValue
+
             }
         }
             // Check if the metadataObjects array is not nil and it contains at least one object.
@@ -124,9 +145,11 @@ class QRScannerController: UIViewController, AVCaptureMetadataOutputObjectsDeleg
                 // If the found metadata is equal to the QR code metadata then update the status label's text and set the bounds
                 let barCodeObject = videoPreviewLayer?.transformedMetadataObject(for: metadataObj)
                 qrCodeFrameView?.frame = barCodeObject!.bounds
+                createAlertQR(title: "Bekreft rom?", message: "")
                 
                 if metadataObj.stringValue != nil {
                     messageLabel.text = metadataObj.stringValue
+
             }
         }
     }
