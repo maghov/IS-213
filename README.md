@@ -4,7 +4,7 @@
 * [Getting Started](#getting-started)
    * [Prerequisites](#prerequisites)
    * [Installation](#installation)
-* [Getting started with tests](#getting-started-with-tests)
+   * [Getting started with tests](#getting-started-with-tests)
 * [Coding Style](#coding-style)
 * [Deployment](#deployment)
 * [Contributing](#contributing)
@@ -68,17 +68,8 @@ Once all the necessary programs are installed on your local machine, you may the
  
 Once the project is on your machine, you must navigate to the downloaded folder and run the "LoginV1.xcodeproj" file. This will open up the project directly on Xcode. Afterwards you must run the project in order for it to compile, and test to see if everything builds correctly. 
 
-## Getting started with tests
-Testing is an important feature that we encourage people to help us out with. In order to get started with testing your features, here is a simple instruction on how to set up a Unit Test on Xcode. 
-
-![alt text](http://i.imgur.com/dbT1u1N.png)
-1. The first step is to go to targets, and clicking on the + sign at the bottom left corner. 
-![alt text](http://i.imgur.com/nPceaND.png)
-2. Afterwards you must choose the Unit Test option, type in your credentials and click next.
-3. You will then see a new target that has been created, which in our example, is called the "LoginV1Tests" target
-4. Afterwards, you must click on "All" and "Combines" and scroll down until you find the Build Options section - in here you must change the value to "Yes" on the "Enable Testability" section
-![alt text](http://i.imgur.com/3H06Fd2.png)
-5. This generates a new folder, with a new swift file, in here you may write the necessary functions to carry out the tests that you wish. 
+#### Getting started with tests
+Currently, an Ad-hoc testing appraoch was mainly used throughout the development of our project. We require contributors to help us create unit testing functions. Please refer to our [Wiki!](https://github.com/maghov/IS-213/wiki) page for an introduction guide on how you can get started by creating your own unit tests. 
 
 ## Coding Style
 
@@ -118,7 +109,7 @@ KOMMER SNART
 
 * [Cocoapods](https://cocoapods.org) - Libraries for Xcode
 * [Xcode](https://maven.apache.org/) - Programming platform used to develop this application
-* [Firebase](https://firebase.google.com) - Database and backend used for our system
+* [Firebase](https://firebase.google.com) - Database used for our system
 
 ## Authors
 
