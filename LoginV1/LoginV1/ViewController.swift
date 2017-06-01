@@ -19,7 +19,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UIAlertViewDelegate
                 autoLogIn()
         }
         else {
-            notAutoLogIn()
+            
         }
         
     
@@ -30,7 +30,6 @@ class ViewController: UIViewController, UITextFieldDelegate, UIAlertViewDelegate
     @IBOutlet weak var passwordText: UITextField!
     @IBOutlet weak var actionButton: UIButton!
     @IBOutlet weak var confirmPasswordText: UITextField!
-    
     
     
     
@@ -132,6 +131,9 @@ class ViewController: UIViewController, UITextFieldDelegate, UIAlertViewDelegate
             
        try! FIRAuth.auth()?.signOut()
         }}
+    
+    
+    
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
