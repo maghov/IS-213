@@ -5,6 +5,8 @@
 //  Created by Mohammad Hussain on 19/04/2017.
 //  Copyright © 2017 Magnus Høvik. All rights reserved.
 //
+// This class includes every field that is in the database for a room.
+//
 
 class RoomModel {
     var id: String?
@@ -23,11 +25,7 @@ class RoomModel {
     var booketAvEttTo: String?
     var booketAvToTre: String?
     var booketAvTreFire: String?
-
-
-
-
-
+    
     
     init(id: String?, name: String?, space: String?, details: String?, tiElleve:String?,elleveTolv: String?,tolvEtt : String?, ettTo: String?,toTre: String?,treFire: String?, booketAvTiElleve: String?, booketAvElleveTolv: String?, booketAvTolvEtt: String?, booketAvEttTo: String?, booketAvToTre: String? , booketAvTreFire: String?) {
         self.id = id;

@@ -55,6 +55,7 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
         return roomList.count
     }
     
+    //Creates rows for every room in the database.
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as!ViewControllerTableViewCell

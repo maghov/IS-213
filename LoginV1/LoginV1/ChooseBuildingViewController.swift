@@ -13,6 +13,8 @@ import Firebase
 class ChooseBuildingViewController: UIViewController, UITableViewDataSource, UITableViewDelegate  {
     @IBOutlet weak var viewDropDownMenu: UIView!
     
+    
+//Creates a list of buildings
 let buildingList = ["Bygg 47", "Bygg 48", "Bygg 49", "Bygg 50", "Bygg 51"]
 
     @IBAction func showDropDownMenu(_ sender: UIBarButtonItem) {
@@ -35,7 +37,7 @@ let buildingList = ["Bygg 47", "Bygg 48", "Bygg 49", "Bygg 50", "Bygg 51"]
     }
     
     
-    
+    //Creates a row for every building in the table.
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let buildingCell = UITableViewCell (style: UITableViewCellStyle.default, reuseIdentifier: "buildingCell")
@@ -43,7 +45,7 @@ let buildingList = ["Bygg 47", "Bygg 48", "Bygg 49", "Bygg 50", "Bygg 51"]
         return buildingCell
     }
     
-    
+    //Switches scene to RoomViewController when you tap a building.
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         performSegue(withIdentifier: "segueBuildingToRoom" , sender: self)
     }
