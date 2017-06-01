@@ -12,6 +12,7 @@
     * [Code Related Contribution](#code-related-contribution)
     * [Issues](#issues)
 * [Bug Reporting](#bug-reporting)
+* [Future](#future)
 * [Built With](#built-With)
 * [Authors](#authors)
 * [License](#license)
@@ -104,6 +105,9 @@ One may also see the current progress of the project as well by going to the [pr
 ## Bug Reporting
 
 KOMMER SNART
+
+## Future
+We do not wish to abondon this project once we are finished with our current assignment, and we would like to continue from time to time working with this application. Seeing as this is a great learning tool as to how it would actually be to manage a real life open source project, we would like to continue developing this. Our application is currently in its most basic form, but it was made due to having a need for a better system than what we currently have in our school, and we would one day like to realise this need and finish creating what we initially started out with. We look forward to the future, to see whether any real contributors actually help us out on this project, and how much our programming skills improve over the years of working on this.
 
 ## Built With
 
