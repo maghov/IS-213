@@ -19,6 +19,23 @@ class AddRoomsController: UIViewController {
     
     @IBOutlet weak var textFieldDetails: UITextField!
     
+    @IBOutlet weak var viewDropDownMenu: UIView!
+    
+    @IBAction func showDropDownMenu(_ sender: UIBarButtonItem){
+        if (viewDropDownMenu.isHidden == true ){
+            viewDropDownMenu.isHidden = false
+        }else if (viewDropDownMenu.isHidden == false) {
+            viewDropDownMenu.isHidden = true
+        }
+    }
+    
+    @IBAction func logoutButtonPressed(_ sender: UIButton) {
+        try! FIRAuth.auth()?.signOut()
+        performSegue(withIdentifier: "segueAddRoomsToLogin", sender: self)
+    }
+    
+    
+    
     @IBAction func buttonAddRoom(_ sender: UIButton) {
         addRoom()
     }
@@ -66,6 +83,7 @@ class AddRoomsController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
          refRoomsFromDataBase = FIRDatabase.database().reference().child("list")
+        viewDropDownMenu.isHidden = true
         
     }
     
@@ -74,6 +92,7 @@ class AddRoomsController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+        
     }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)

@@ -28,13 +28,13 @@ class ViewController: UIViewController, UITextFieldDelegate, UIAlertViewDelegate
     @IBOutlet weak var segmentController: UISegmentedControl!
     @IBOutlet weak var emailText: UITextField!
     @IBOutlet weak var passwordText: UITextField!
-    @IBOutlet weak var actionButton: UIButton!
     @IBOutlet weak var confirmPasswordText: UITextField!
     
+    @IBOutlet weak var buttonLogin: UIButton!
     
     
-    
-    @IBAction func action(_ sender: UIButton) {
+    @IBAction func loginButtonPressed(_ sender: UIButton) {
+        
         
         if emailText.text != "" && passwordText.text != ""
         {
@@ -110,11 +110,11 @@ class ViewController: UIViewController, UITextFieldDelegate, UIAlertViewDelegate
     @IBAction func SegmentControllerView(_ sender: UISegmentedControl) {
     
         if segmentController.selectedSegmentIndex == 0 {
-            actionButton.setTitle("Login", for: .normal)
+            buttonLogin.setTitle("Login", for: .normal)
             confirmPasswordText.isHidden = true
         }
         else {
-            actionButton.setTitle("Sign up", for: .normal)
+            buttonLogin.setTitle("Sign up", for: .normal)
             confirmPasswordText.isHidden = false
         }
     }
