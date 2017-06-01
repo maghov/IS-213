@@ -18,6 +18,7 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     var index = 0
     
+    let error = "Something went wrong"
     
     var ref = FIRDatabase.database().reference()
     
@@ -48,9 +49,6 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     // cell reuse id (cells that scroll out of view can be reused)
     let cellReuseIdentifier = "cell"
-    
-    // don't forget to hook this up from the storyboard
-    
     
     @IBOutlet weak var labelRoomNumber: UILabel!
     
@@ -101,7 +99,7 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
         return cell
     }
     
-    
+    //Alert that is creating when unbooking a room
     func createAlertUnbook(title: String, message: String) {
         
         let alertUnbook = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)
@@ -159,7 +157,7 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     
-    
+    //Alert to confirm booking of a room.
     func createAlert(title: String, message: String) {
         
         let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)
@@ -215,7 +213,7 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
         
     }
     
-    
+    //All these functions are used to book a room for a specified time.
     func confirmtiElleve() {
         
         if roomList[myIndex].tiElleve == "Ledig" {
@@ -232,7 +230,7 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
             
             
         } else {
-            print("test")
+            print(error)
         }
     }
     
@@ -252,7 +250,7 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
             
             
         } else {
-            print("test")
+            print(error)
         }
     }
     
@@ -272,7 +270,7 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
             
             
         } else {
-            print("test")
+            print(error)
         }
     }
     
@@ -293,7 +291,7 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
             
             
         } else {
-            print("test")
+            print(error)
         }
     }
     
@@ -313,7 +311,7 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
             
             
         } else {
-            print("test")
+            print(error)
         }
     }
 
@@ -334,7 +332,7 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
             
             
         } else {
-            print("test")
+            print(error)
         }
     }
     

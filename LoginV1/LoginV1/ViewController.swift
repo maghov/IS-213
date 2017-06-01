@@ -17,6 +17,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UIAlertViewDelegate
     @IBAction func switchAutoLogOn(_ sender: UISwitch) {
         if sender.isOn == true {
                 autoLogIn()
+            
         }
         else {
             

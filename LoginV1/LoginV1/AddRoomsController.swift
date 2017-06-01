@@ -19,10 +19,11 @@ class AddRoomsController: UIViewController {
     
     @IBOutlet weak var textFieldDetails: UITextField!
     
+    //This button runs the function addRoom()
     @IBAction func buttonAddRoom(_ sender: UIButton) {
         addRoom()
     }
-    
+    //This function adds rooms to the firebase database with the following values:
     func addRoom() {
         let key = textFieldRoomName.text! as String
         let tiElleve = "Ledig"

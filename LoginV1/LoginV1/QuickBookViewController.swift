@@ -24,6 +24,7 @@ class QuickBookViewController: UIViewController {
         }
     }
     
+    //Logs out the user.
     @IBAction func logoutButtonPressed(_ sender: UIButton) {
         try! FIRAuth.auth()?.signOut()
         performSegue(withIdentifier: "quickBookToLogin", sender: self)

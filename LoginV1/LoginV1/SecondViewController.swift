@@ -21,6 +21,7 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
     @IBOutlet weak var textFieldDetails: UITextField!
     @IBOutlet weak var tblRooms: UITableView!
     
+    
     @IBAction func showDropDownMenu(_ sender: UIBarButtonItem) {
         if (viewDropDownMenu.isHidden == true){
             viewDropDownMenu.isHidden = false
@@ -35,12 +36,9 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
         performSegue(withIdentifier: "SegueChooseRoomToLogin", sender: self)
     }
     
-    
-    
-    
-    
     @IBAction func buttonAddRoom(_ sender: UIButton) {
         addRoom()
+        
     }
 
     
