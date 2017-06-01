@@ -22,7 +22,7 @@
 This is an open source project for managing room reservations (focusing currently on only our school which is the University of Agder in Kristiansand, Norway). There are several campus buildings with different equipment and room sizes. Our goal is to optimise the booking system for students by having a way to see whether a room is being used or not making it easier to see which rooms are available. The project is currently a work in progress and is in no way finished. This being an MIT licenced project it is open to the public where people are free and encouraged to help and contribute. This also being a school project, we have taken the oppurtnity to learn a new language, which is Swift 3.1 in our case. We have little to no background of working with Xcode or Swift, so any help on this project is greatly appreciated.
 
 ## Getting Started
-These instructions will help you get the project up and running on your local machine for development and testing purposes. See our [!installation wiki page](https://github.com/maghov/IS-213/wiki/Installation) for a video instruction on how to deploy the project on a live system.
+These instructions will help you get the project up and running on your local machine for development and testing purposes. See our [installation wiki page](https://github.com/maghov/IS-213/wiki/Installation) for a video instruction on how to deploy the project on a live system.
 
 #### Prerequisites
 Software that needs to be installed
