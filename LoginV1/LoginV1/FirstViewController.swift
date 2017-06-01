@@ -2,8 +2,8 @@
 //  FirstViewController.swift
 //  RoomBooking3
 //
-//  Created by Magnus Høvik on 18.04.2017.
-//  Copyright © 2017 Magnus Høvik. All rights reserved.
+//  Created by Gruppe10 on 18.04.2017.
+//  Copyright © 2017 Gruppe10. All rights reserved.
 //
 
 import UIKit

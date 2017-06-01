@@ -3,8 +3,8 @@
 //  dropDownMenuViewController.swift
 //  LoginV1
 //
-//  Created by Eirik Oliversen on 31.05.2017.
-//  Copyright © 2017 eoliversen. All rights reserved.
+//  Created by Gruppe10 on 31.05.2017.
+//  Copyright © 2017 Gruppe10. All rights reserved.
 //
 
 import UIKit
@@ -14,7 +14,7 @@ class dropDownMenuViewController: UIViewController {
     @IBOutlet weak var viewDropDownMenu: UIView!
     
     
-    //functions
+
     @IBAction func showDropdownMenu(_ sender: UIBarButtonItem) {
         
         if (viewDropDownMenu.isHidden == true){

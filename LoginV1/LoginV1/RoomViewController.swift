@@ -2,8 +2,8 @@
 //  RoomViewController.swift
 //  RoomBooking3
 //
-//  Created by Mohammad Hussain on 21/04/2017.
-//  Copyright © 2017 Magnus Høvik. All rights reserved.
+//  Created by Gruppe10 on 21/04/2017.
+//  Copyright © 2017 Gruppe10. All rights reserved.
 //
 
 import UIKit
@@ -348,6 +348,7 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     
     // method to run when table view cell is tapped
+    // also creates the relevant alerts.
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         
