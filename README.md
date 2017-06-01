@@ -104,10 +104,10 @@ The following contributions are needed that are not code related:
 We appreciate any type of code contribution made to our project. We currently have very little background on working with Xcode and Swift, thus errors or coding mistakes, and general unorthadox issues are likely to occur throughout the code. The current language being used as of May 2017 is Swift 3.0, and all contributions made should be written in this language
 
 #### Issues 
-[!alt text](http://i.imgur.com/KoMKtdE.png)
+![alt text](http://i.imgur.com/KoMKtdE.png)
 The current issues can be accessed on our "Issues" github tab or by [clicking on This!](https://github.com/maghov/IS-213/issues) link. It consists of features that we wish to implement, and features that are implemented but are not working as desired.
 
-[!alt text](http://i.imgur.com/YVAk25G.png)
+![alt text](http://i.imgur.com/YVAk25G.png)
 One may also see the current progress of the project as well by going to the [projects tab](https://github.com/maghov/IS-213/projects/1). Here there are four main columns that show the current on-going process of our project and what is complete. In this menu you will find the Wish-List, these are what we wish to implement in the feature, but are not a must have feature. The next column is ToDo, these are the tasks that we must get started on. The third column is the InProgress column, these are the current tasks that we are working on, and the final column are tasks that have been completed.
 
 ## Bug Reporting
