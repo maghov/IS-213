@@ -2,8 +2,8 @@
 //  ViewController.swift
 //  LoginV1
 //
-//  Created by Eirik Oliversen on 21.04.2017.
-//  Copyright © 2017 eoliversen. All rights reserved.
+//  Created by Gruppe10 on 21.04.2017.
+//  Copyright © 2017 Gruppe10. All rights reserved.
 //
 
 import UIKit
@@ -17,6 +17,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UIAlertViewDelegate
     @IBAction func switchAutoLogOn(_ sender: UISwitch) {
         if sender.isOn == true {
                 autoLogIn()
+            
         }
         else {
             

@@ -2,8 +2,8 @@
 //  QuickBookViewController.swift
 //  LoginV1
 //
-//  Created by Eirik Oliversen on 31.05.2017.
-//  Copyright © 2017 eoliversen. All rights reserved.
+//  Created by Gruppe10 on 31.05.2017.
+//  Copyright © 2017 Gruppe10. All rights reserved.
 //
 
 import UIKit
@@ -24,6 +24,7 @@ class QuickBookViewController: UIViewController {
         }
     }
     
+    //Logs out the user.
     @IBAction func logoutButtonPressed(_ sender: UIButton) {
         try! FIRAuth.auth()?.signOut()
         performSegue(withIdentifier: "quickBookToLogin", sender: self)

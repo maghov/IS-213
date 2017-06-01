@@ -2,8 +2,8 @@
 //  SecondViewController.swift
 //  RoomBooking3
 //
-//  Created by Magnus Høvik on 18.04.2017.
-//  Copyright © 2017 Magnus Høvik. All rights reserved.
+//  Created by Gruppe10 on 18.04.2017.
+//  Copyright © 2017 Gruppe10. All rights reserved.
 //
 
 import UIKit
@@ -21,6 +21,7 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
     @IBOutlet weak var textFieldDetails: UITextField!
     @IBOutlet weak var tblRooms: UITableView!
     
+    
     @IBAction func showDropDownMenu(_ sender: UIBarButtonItem) {
         if (viewDropDownMenu.isHidden == true){
             viewDropDownMenu.isHidden = false
@@ -35,12 +36,9 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
         performSegue(withIdentifier: "SegueChooseRoomToLogin", sender: self)
     }
     
-    
-    
-    
-    
     @IBAction func buttonAddRoom(_ sender: UIButton) {
         addRoom()
+        
     }
 
     
@@ -57,6 +55,7 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
         return roomList.count
     }
     
+    //Creates rows for every room in the database.
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as!ViewControllerTableViewCell

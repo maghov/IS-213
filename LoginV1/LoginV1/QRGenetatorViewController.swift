@@ -2,8 +2,8 @@
 //  QRGenetatorViewController.swift
 //  QRCodeGenerator
 //
-//  Created by Magnus Høvik on 02.05.2017.
-//  Copyright © 2017 John Jensen. All rights reserved.
+//  Created by Gruppe10 on 02.05.2017.
+//  Copyright © 2017 Gruppe10. All rights reserved.
 //
 
 import UIKit

@@ -2,8 +2,8 @@
 //  BuildingTableViewCell.swift
 //  LoginV1
 //
-//  Created by Magnus Høvik on 30.05.2017.
-//  Copyright © 2017 eoliversen. All rights reserved.
+//  Created by Gruppe10 on 30.05.2017.
+//  Copyright © 2017 Gruppe10. All rights reserved.
 //
 
 import UIKit
