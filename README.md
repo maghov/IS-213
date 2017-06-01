@@ -118,7 +118,7 @@ KOMMER SNART
 
 * [Cocoapods](https://cocoapods.org) - Libraries for Xcode
 * [Xcode](https://maven.apache.org/) - Programming platform used to develop this application
-* [Firebase](https://firebase.google.com) - Database used for our system
+* [Firebase](https://firebase.google.com) - Database and backend used for our system
 
 ## Authors
 
