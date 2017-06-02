@@ -50,7 +50,7 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
     // cell reuse id (cells that scroll out of view can be reused)
     let cellReuseIdentifier = "cell"
     
-    @IBOutlet weak var labelRoomNumber: UILabel!
+
     
     
     override func viewDidLoad() {
@@ -61,8 +61,6 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
         self.tableTime.register(UITableViewCell.self, forCellReuseIdentifier: cellReuseIdentifier)
         
         navigationBar.topItem?.title = roomList[myIndex].name
-        
-        labelRoomNumber.text = roomList[myIndex].name
         
     }
     

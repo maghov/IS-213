@@ -14,8 +14,7 @@ class ChooseBuildingViewController: UIViewController, UITableViewDataSource, UIT
     @IBOutlet weak var viewDropDownMenu: UIView!
     
     
-//Creates a list of buildings
-let buildingList = ["Bygg 47", "Bygg 48", "Bygg 49", "Bygg 50", "Bygg 51"]
+
 
     @IBAction func showDropDownMenu(_ sender: UIBarButtonItem) {
         if (viewDropDownMenu.isHidden == true){
@@ -30,6 +29,11 @@ let buildingList = ["Bygg 47", "Bygg 48", "Bygg 49", "Bygg 50", "Bygg 51"]
         try! FIRAuth.auth()?.signOut()
         performSegue(withIdentifier: "seguechooseBuildingToLogin", sender: self)
     }
+    
+    
+    
+    //Creates a list of buildings
+    let buildingList = ["Bygg 47", "Bygg 48", "Bygg 49", "Bygg 50", "Bygg 51"]
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
