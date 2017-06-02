@@ -29,6 +29,12 @@
                                         <barButtonItem key="leftBarButtonItem" title="Tilbake" style="done" id="LFn-60-5CR">
                                             <color key="tintColor" red="0.92156862750000001" green="0.13725490200000001" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="rewind" id="g9A-lY-z9l">
+                                            <color key="tintColor" red="0.92156862750000001" green="0.2156862745" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <action selector="buttonDropDownMenu:" destination="1f4-9C-9qV" id="b98-TU-gV4"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -60,13 +66,65 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xPv-a5-arN">
+                                <rect key="frame" x="205" y="64" width="170" height="607"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aC0-K0-Xln" customClass="PressableButton" customModule="SwiftyButton">
+                                        <rect key="frame" x="0.0" y="0.0" width="170" height="55"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Hjem">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="Zgi-Gj-Spm" kind="show" id="WXE-hi-hhc"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h2g-Fv-PPP" customClass="PressableButton" customModule="SwiftyButton">
+                                        <rect key="frame" x="0.0" y="63" width="170" height="55"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Hurtigbooking">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="Ill-e6-jK3" kind="show" id="tKX-F5-NLI"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c1f-MR-zxt" customClass="PressableButton" customModule="SwiftyButton">
+                                        <rect key="frame" x="0.0" y="126" width="170" height="55"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Min Profil">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5n0-ic-AhO" customClass="PressableButton" customModule="SwiftyButton">
+                                        <rect key="frame" x="0.0" y="189" width="170" height="55"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Om RoomBooking">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yqf-LK-pz8" customClass="PressableButton" customModule="SwiftyButton">
+                                        <rect key="frame" x="0.0" y="252" width="170" height="55"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Log ut">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonLogOut:" destination="1f4-9C-9qV" eventType="touchUpInside" id="Qez-Xz-94h"/>
+                                            <segue destination="BYZ-38-t0r" kind="show" identifier="segueMyPageToLogin" id="gY7-X0-4oe"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rgS-lH-ZER" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2670" y="-474"/>
+            <point key="canvasLocation" x="2669.5999999999999" y="-474.51274362818594"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="bSg-as-vbt">
@@ -315,7 +373,7 @@
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
                                         <connections>
-                                            <segue destination="1f4-9C-9qV" kind="show" id="P5G-ed-0Zm"/>
+                                            <segue destination="1f4-9C-9qV" kind="show" id="sCp-9B-brg"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gjS-5G-ykB" customClass="PressableButton" customModule="SwiftyButton">
@@ -481,9 +539,6 @@
                                         <state key="normal" title="Min Profil">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
-                                        <connections>
-                                            <segue destination="1f4-9C-9qV" kind="show" id="Pt2-bq-ZDL"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="azU-OM-wGD" customClass="PressableButton" customModule="SwiftyButton">
                                         <rect key="frame" x="0.0" y="189" width="170" height="55"/>
@@ -642,9 +697,6 @@
                                         <state key="normal" title="Min Profil">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
-                                        <connections>
-                                            <segue destination="1f4-9C-9qV" kind="show" id="Ihk-ty-GBR"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8A9-J9-J2F" customClass="PressableButton" customModule="SwiftyButton">
                                         <rect key="frame" x="0.0" y="189" width="170" height="55"/>
@@ -762,9 +814,6 @@
                                         <state key="normal" title="Min Profil">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
-                                        <connections>
-                                            <segue destination="1f4-9C-9qV" kind="show" id="owl-7N-c3q"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zyD-Gk-gUx" customClass="PressableButton" customModule="SwiftyButton">
                                         <rect key="frame" x="0.0" y="189" width="170" height="55"/>
@@ -961,7 +1010,7 @@
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
                                         <connections>
-                                            <segue destination="1f4-9C-9qV" kind="show" id="mGI-Ql-vDq"/>
+                                            <segue destination="1f4-9C-9qV" kind="show" id="CKh-mq-wYP"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X3m-NY-kLY" customClass="PressableButton" customModule="SwiftyButton">
@@ -1089,9 +1138,6 @@
                                         <state key="normal" title="Min Profil">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
-                                        <connections>
-                                            <segue destination="1f4-9C-9qV" kind="show" id="yFh-Cv-SDZ"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="goK-rW-SC4" customClass="PressableButton" customModule="SwiftyButton">
                                         <rect key="frame" x="0.0" y="189" width="170" height="55"/>
@@ -1365,10 +1411,11 @@
         <image name="uia_logo_pms.png" width="639" height="102"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="eZ2-Zk-mEc"/>
+        <segue reference="WXE-hi-hhc"/>
+        <segue reference="CKh-mq-wYP"/>
+        <segue reference="tKX-F5-NLI"/>
+        <segue reference="yZD-Nh-TFv"/>
+        <segue reference="gY7-X0-4oe"/>
         <segue reference="Qot-wk-C1p"/>
-        <segue reference="Pt2-bq-ZDL"/>
-        <segue reference="Zq1-qE-4Q4"/>
-        <segue reference="qN4-Ol-1WJ"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -12,6 +12,26 @@ import Firebase
 class MyPageViewController: UIViewController {
 
    
+    @IBOutlet weak var viewDropDownMenu: UIView!
+    
+    @IBAction func buttonDropDownMenu(_ sender: UIBarButtonItem) {
+        if (viewDropDownMenu.isHidden == true){
+            viewDropDownMenu.isHidden = false
+        }
+        else if (viewDropDownMenu.isHidden == false){
+            viewDropDownMenu.isHidden = true
+        }
+
+    }
+    
+    @IBAction func buttonLogOut(_ sender: UIButton) {
+        try! FIRAuth.auth()?.signOut()
+        performSegue(withIdentifier: "segueMyPageToLogin", sender: self)
+    }
+    
+   
+  
+    
     
     
     override func viewDidLoad() {
