@@ -116,7 +116,7 @@ class QRScannerController: UIViewController, AVCaptureMetadataOutputObjectsDeleg
   
     func confirmBook(){
         
-        performSegue(withIdentifier: "segueNew", sender: self)
+        performSegue(withIdentifier: "segueQrScanToHomePage", sender: self)
     }
 
 
