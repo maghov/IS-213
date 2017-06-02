@@ -50,7 +50,7 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
     // cell reuse id (cells that scroll out of view can be reused)
     let cellReuseIdentifier = "cell"
     
-    @IBOutlet weak var labelRoomNumber: UILabel!
+
     
     
     override func viewDidLoad() {
@@ -62,8 +62,6 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         navigationBar.topItem?.title = roomList[myIndex].name
         
-        labelRoomNumber.text = roomList[myIndex].name
-        
     }
     
     @IBAction func showDropDownMenu(_ sender: UIBarButtonItem) {
@@ -74,7 +72,7 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
             viewDropDownMenu.isHidden = true
         }
     }
-    
+    //Button that handles the logout and sends the user to the Login page.
     @IBAction func logoutButtonPressed(_ sender: UIButton) {
         try! FIRAuth.auth()?.signOut()
         performSegue(withIdentifier: "segueRoomViewToLogin", sender: self)
@@ -99,12 +97,12 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
         return cell
     }
     
-    //Alert that is creating when unbooking a room
+    //Alert that is created when unbooking a room
     func createAlertUnbook(title: String, message: String) {
         
         let alertUnbook = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)
         
-        
+        //Checks what room to unbook when the button is tapped
         alertUnbook.addAction(UIAlertAction(title: "Avbestill", style: UIAlertActionStyle.default, handler: { (action) in
             alertUnbook.dismiss(animated: true, completion: nil)
             
@@ -143,7 +141,7 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
             
             
         }))
-        
+        //What happens when the cancel action is tapped.
         alertUnbook.addAction(UIAlertAction(title: "Avbryt", style: UIAlertActionStyle.destructive, handler: { (action) in
             alertUnbook.dismiss(animated: true, completion: nil)
             

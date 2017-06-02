@@ -37,8 +37,35 @@ class AddRoomsController: UIViewController {
     
     
     @IBAction func buttonAddRoom(_ sender: UIButton) {
-        addRoom()
+        createAlert(title: "Add room?", message: "")
     }
+    
+    
+    func createAlert(title: String, message: String) {
+        
+        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)
+        
+        
+        alert.addAction(UIAlertAction(title: "Bekreft", style: UIAlertActionStyle.default, handler: { (action) in
+            alert.dismiss(animated: true, completion: nil)
+            self.addRoom()
+
+             }))
+            
+            alert.addAction(UIAlertAction(title: "Avbryt", style: UIAlertActionStyle.destructive, handler: { (action) in
+                alert.dismiss(animated: true, completion: nil)
+                
+                
+                
+            }))
+            self.present(alert, animated: true, completion: nil)
+            
+            
+            
+        }
+
+    
+    
     //This function adds rooms to the firebase database with the following values:
     func addRoom() {
         let key = textFieldRoomName.text! as String
