@@ -7,7 +7,6 @@
    * [Getting started with tests](#getting-started-with-tests)
 * [Deployment](#deployment)
 * [Contributing](#contributing)
-* [Bug Reporting](#bug-reporting)
 * [Built With](#built-With)
 * [Authors](#authors)
 * [License](#license)
@@ -15,7 +14,7 @@
 
 ## IS-213
 ## Room Booking Application
-This is an open source project for managing room reservations (focusing currently on only our school which is the University of Agder in Kristiansand, Norway). There are several campus buildings with different equipment and room sizes. Our goal is to optimise the booking system for students by having a way to see whether a room is being used or not making it easier to see which rooms are available. The project is currently a work in progress and is in no way finished. This being an MIT licenced project it is open to the public where people are free and encouraged to help and contribute. This also being a school project, we have taken the oppurtnity to learn a new language, which is Swift 3.1 in our case. We have little to no background of working with Xcode or Swift, so any help on this project is greatly appreciated.
+This is an open source project for managing room reservations (focusing currently on only our school which is the University of Agder in Kristiansand, Norway). There are several campus buildings with different equipment and room sizes. Our goal is to optimise the booking system for students by having a way to confirm whether a room is being used or not making it easier to see which rooms are available. The project is currently a work in progress and is in no way finished. This being an MIT licenced project it is open to the public where people are free and encouraged to help and contribute. This also being a school project, we have taken the oppurtnity to learn a new language, which is Swift 3.1 in our case. We have little to no background of working with Xcode or Swift, so any help on this project is greatly appreciated.
 
 ## Getting Started
 These instructions will help you get the project up and running on your local machine for development and testing purposes. See our [installation wiki page](https://github.com/maghov/IS-213/wiki/Installation) for a video instruction on how to deploy the project on a live system.
@@ -68,10 +67,6 @@ Currently, an Ad-hoc testing appraoch was mainly used throughout the development
 
 ## Contributing
 We appreciate all types of contributors that wish to help us in this project. Programming skills are not a necessity, and people with different types of backgrounds are welcome to contribute. [Please refer to our contrubuting page](https://github.com/maghov/IS-213/wiki/Contributing) on our [Wiki!](https://github.com/maghov/IS-213/wiki). Here you will find the different ways in how you may help us contribute on our project.
-
-## Bug Reporting
-
-KOMMER SNART
 
 ## Built With
 
