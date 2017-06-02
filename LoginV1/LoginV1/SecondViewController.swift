@@ -21,7 +21,7 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
     @IBOutlet weak var textFieldDetails: UITextField!
     @IBOutlet weak var tblRooms: UITableView!
     
-    
+    //Code for dropdown menu
     @IBAction func showDropDownMenu(_ sender: UIBarButtonItem) {
         if (viewDropDownMenu.isHidden == true){
             viewDropDownMenu.isHidden = false
@@ -30,12 +30,12 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
             viewDropDownMenu.isHidden = true
         }
     }
-    
+    //Logs out the user
     @IBAction func logoutButtonPressed(_ sender: UIButton) {
         try! FIRAuth.auth()?.signOut()
         performSegue(withIdentifier: "SegueChooseRoomToLogin", sender: self)
     }
-    
+    //This button runs the function addRoom()
     @IBAction func buttonAddRoom(_ sender: UIButton) {
         addRoom()
         
@@ -72,7 +72,7 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     
-    
+    //Function to add a room
     func addRoom() {
         let key = textFieldName.text! as String
     
