@@ -1,19 +1,17 @@
 //
 //  MyPageViewController.swift
-//  
+//  LoginV1
 //
-//  Created by Magnus Høvik on 01.06.2017.
-//
+//  Created by Eirik Oliversen on 02.06.2017.
+//  Copyright © 2017 eoliversen. All rights reserved.
 //
 
 import UIKit
-import Firebase
 
 class MyPageViewController: UIViewController {
+    
+  
 
-   
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -25,5 +23,7 @@ class MyPageViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+
+
 
 }
