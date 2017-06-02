@@ -5,13 +5,8 @@
    * [Prerequisites](#prerequisites)
    * [Installation](#installation)
    * [Getting started with tests](#getting-started-with-tests)
-* [Coding Style](#coding-style)
 * [Deployment](#deployment)
 * [Contributing](#contributing)
-    * [No Code Related Contribution](#no-code-related-contribution)
-    * [Code Related Contribution](#code-related-contribution)
-    * [Issues](#issues)
-* [Bug Reporting](#bug-reporting)
 * [Built With](#built-With)
 * [Authors](#authors)
 * [License](#license)
@@ -19,12 +14,12 @@
 
 ## IS-213
 ## Room Booking Application
-This is an open source project for managing room reservations (focusing currently on only our school which is the University of Agder in Kristiansand, Norway). There are several campus buildings with different equipment and room sizes. Our goal is to optimise the booking system for students by having a way to see whether a room is being used or not making it easier to see which rooms are available. The project is currently a work in progress and is in no way finished. This being an MIT licenced project it is open to the public where people are free and encouraged to help and contribute. This also being a school project, we have taken the oppurtnity to learn a new language, which is Swift 3.1 in our case. We have little to no background of working with Xcode or Swift, so any help on this project is greatly appreciated.
+This is an open source project for managing room reservations (focusing currently on only our school which is the University of Agder in Kristiansand, Norway). There are several campus buildings with different equipment and room sizes. Our goal is to optimise the booking system for students by having a way to confirm whether a room is being used or not making it easier to see which rooms are available. The project is currently a work in progress and is in no way finished. This being an MIT licenced project it is open to the public where people are free and encouraged to help and contribute. This also being a school project, we have taken the oppurtnity to learn a new language, which is Swift 3.1 in our case. We have little to no background of working with Xcode or Swift, so any help on this project is greatly appreciated.
 
 ## Getting Started
 These instructions will help you get the project up and running on your local machine for development and testing purposes. See our [installation wiki page](https://github.com/maghov/IS-213/wiki/Installation) for a video instruction on how to deploy the project on a live system.
 
-#### Prerequisites
+## Prerequisites
 Software that needs to be installed
 ```
 Cocoapods 
@@ -33,12 +28,13 @@ Swift 3
 Firebase 
 ```
 
-#### Installation
+## Installation
 In order to get started and help us out in this project certain steps need to be taken to get the program up and running on your computer. Currently, this project is only developed on Xcode and Windows integration has not been implemented as of this moment. 
 This project was written within Xcode version 8.3.2 and using the Swift 3 language, please try to use these versions as they are guaranteed to be compatible with the code available on GitHub, older and or eventual newer versions may have different results, so we recommend sticking to Xcode 8.3.2 and Swift 3.
 
-##### The first step is to download Xcode onto your machine, this can be done by the following steps: 
+Check out our [Wiki!](https://github.com/maghov/IS-213/wiki) page if you wish for more detailed instructions
 
+#### The first step is to download Xcode onto your machine, this can be done by the following steps: 
 1.	Open the App Store app on your Mac (by default it’s in the Dock).
 2.	In the search field in the top-right corner, type Xcode and press the Return key.
 3.	The Xcode app shows up as the first search result.
@@ -46,13 +42,11 @@ This project was written within Xcode version 8.3.2 and using the Swift 3 langua
 5.	Enter your Apple ID and password when prompted.
 6.	Xcode is downloaded into your /Applications directory. (Apple, 2017)
 
-##### The second step is to have [Cocoapods](https://cocoapods.org) installed on your machine, this is done by typing in the following command into your terminal: 
+#### The second step is to have [Cocoapods](https://cocoapods.org) installed on your machine, this is done by typing in the following command into your terminal: 
 
 ```$ sudo gem install cocoapods```
 
-NOTE: This must be installed in the same file directory as Xcode
-
-##### The third step is to get Firebase up and running on your system, this is done so by following these steps: 
+#### The third step is to get Firebase up and running on your system, this is done so by following these steps: 
 [For now, please follow the documentation from the actual fire base google website on how to get it up and running - a more detailed step by step guide for this project is on the to do list]( https://firebase.google.com/docs/ios/setup)
 
 ## Deployment 
@@ -68,42 +62,11 @@ Once all the necessary programs are installed on your local machine, you may the
  
 Once the project is on your machine, you must navigate to the downloaded folder and run the "LoginV1.xcodeproj" file. This will open up the project directly on Xcode. Afterwards you must run the project in order for it to compile, and test to see if everything builds correctly. 
 
-#### Getting started with tests
-Currently, an Ad-hoc testing appraoch was mainly used throughout the development of our project. We require contributors to help us create unit testing functions. Please refer to our [Wiki!](https://github.com/maghov/IS-213/wiki) page for an introduction guide on how you can get started by creating your own unit tests. 
-
-## Coding Style
-
-KOMMER SNART
+## Getting started with tests
+Currently, an Ad-hoc testing appraoch was mainly used throughout the development of our project. We require contributors to help us create unit test functions. Please refer to our [Wiki!](https://github.com/maghov/IS-213/wiki) page for an introduction guide on how you can get started by creating your own unit tests. 
 
 ## Contributing
-We appreciate all types of contributors that wish to help us in this project. Programming skills are not a necessity, and people with different types of backgrounds are welcome to contribute. 
-
-#### No Code Related Contribution
-The following contributions are needed that are not code related: 
-
-##### Artwork 
-* Currently the artwork being used are the standard options that come with Xcode, we would appreciate if there were more options available for people to choose between. Some high priority implementations that we would like to implement within our project are different types of themes,and a night/day versions. 
-
-##### Documenation
-
-* We require contributers that are willing to help us on our [Wiki!](https://github.com/maghov/IS-213/wiki) page. Currently, all the information about this project is written on this ReadMe file, but we would like to have better documantion that documents each aspect of our project. 
-
-* A lot of our comments and commits are written in Norwegian, translating documentation to English is needed
-
-
-#### Code Related Contribution
-We appreciate any type of code contribution made to our project. We currently have very little background on working with Xcode and Swift, thus errors or coding mistakes, and general unorthadox issues are likely to occur throughout the code. The current language being used as of May 2017 is Swift 3.0, and all contributions made should be written in this language
-
-#### Issues 
-![alt text](http://i.imgur.com/KoMKtdE.png)
-The current issues can be accessed on our "Issues" github tab or by [clicking on This!](https://github.com/maghov/IS-213/issues) link. It consists of features that we wish to implement, and features that are implemented but are not working as desired.
-
-![alt text](http://i.imgur.com/YVAk25G.png)
-One may also see the current progress of the project as well by going to the [projects tab](https://github.com/maghov/IS-213/projects/1). Here there are four main columns that show the current on-going process of our project and what is complete. In this menu you will find the Wish-List, these are what we wish to implement in the feature, but are not a must have feature. The next column is ToDo, these are the tasks that we must get started on. The third column is the InProgress column, these are the current tasks that we are working on, and the final column are tasks that have been completed.
-
-## Bug Reporting
-
-KOMMER SNART
+We appreciate all types of contributors that wish to help us in this project. Programming skills are not a necessity, and people with different types of backgrounds are welcome to contribute. [Please refer to our contrubuting page](https://github.com/maghov/IS-213/wiki/Contributing) on our [Wiki!](https://github.com/maghov/IS-213/wiki). Here you will find the different ways in how you may help us contribute on our project.
 
 ## Built With
 
