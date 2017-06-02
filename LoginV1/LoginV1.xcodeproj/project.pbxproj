@@ -28,6 +28,7 @@
 		F952C3F31EAA1DA900FE79AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F952C3F21EAA1DA900FE79AA /* Assets.xcassets */; };
 		F952C3F61EAA1DA900FE79AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F952C3F41EAA1DA900FE79AA /* LaunchScreen.storyboard */; };
 		F952C3FE1EAA202D00FE79AA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F952C3FD1EAA202D00FE79AA /* GoogleService-Info.plist */; };
+		F9A111D01EE1AC480036A6D6 /* AboutRoomBookingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A111CF1EE1AC480036A6D6 /* AboutRoomBookingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		F952C3F51EAA1DA900FE79AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F952C3F71EAA1DA900FE79AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F952C3FD1EAA202D00FE79AA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F9A111CF1EE1AC480036A6D6 /* AboutRoomBookingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutRoomBookingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 				F90C01A11EDF240D00EDB58D /* QuickBookViewController.swift */,
 				7AD97E3C1EE08626003F6BBF /* MyPageViewController.swift */,
 				F93735AA1EE05D21006C0914 /* uia_logo_pms.png */,
+				F9A111CF1EE1AC480036A6D6 /* AboutRoomBookingViewController.swift */,
 			);
 			path = LoginV1;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 				7A36D9281EB898B50028EA35 /* FirstViewController.swift in Sources */,
 				7A36D92A1EB8A3D60028EA35 /* RoomViewController.swift in Sources */,
 				F90C01A21EDF240D00EDB58D /* QuickBookViewController.swift in Sources */,
+				F9A111D01EE1AC480036A6D6 /* AboutRoomBookingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
