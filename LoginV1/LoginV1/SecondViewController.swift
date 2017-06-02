@@ -57,44 +57,41 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     //Creates rows for every room in the database.
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as!ViewControllerTableViewCell
-        
         let room: RoomModel
         
         room = roomList[indexPath.row]
-    
+        
+        //Gives the cells in the viewtable the right values.
         cell.lblName.text = room.name
         cell.lblSpace.text = "Antall plasser " + room.space!
         cell.lblDetails.text = room.details
-
+        
         return cell
     }
     
+    
+    // function to add a room. Takes the input value and sends it to the database.
     func addRoom() {
         let key = textFieldName.text! as String
-    
         let room = ["id": key,
                         "name": textFieldName.text! as String,
                         "space": textFieldSpace.text! as String,
-                        "details": textFieldDetails.text! as String
-                        ]
-    
-    refRooms.child(key).setValue(room)
-    
+                        "details": textFieldDetails.text! as String]
+                        refRooms.child(key).setValue(room)
     }
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        // hides the dropDownMenu as default.
         viewDropDownMenu.isHidden = true
         
         refRooms = FIRDatabase.database().reference().child("list")
-        
         refRooms.observe(FIRDataEventType.value, with:{(snapshot) in
         
             if snapshot.childrenCount > 0 {
                 roomList.removeAll()
-                
                 for rooms in snapshot.children.allObjects as! [FIRDataSnapshot] {
                     let roomObject = rooms.value as? [String: AnyObject]
                     let name = roomObject?["name"]
@@ -131,18 +128,12 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
                                          booketAvToTre: booketAvToTre as! String?,
                                          booketAvTreFire: booketAvTreFire as! String?)
                     roomList.append(room)
-                    
-                    
                 }
             }
-        
             self.tblRooms.reloadData()
-            
         })
-        
  
-        }
-    
+    }
     
     
     override func didReceiveMemoryWarning() {

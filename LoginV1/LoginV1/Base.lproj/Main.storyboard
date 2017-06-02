@@ -130,7 +130,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="maghov@gmail.com" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bmu-22-Gic">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bmu-22-Gic">
                                 <rect key="frame" x="77" y="223" width="220" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
@@ -1789,10 +1789,10 @@
         <image name="uia_logo_pms.png" width="639" height="102"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="ei4-Tf-Ccl"/>
         <segue reference="Qot-wk-C1p"/>
-        <segue reference="68C-Ck-hX0"/>
+        <segue reference="QnE-ox-hEM"/>
         <segue reference="gaV-SI-Axn"/>
         <segue reference="WsW-5S-0sC"/>
-        <segue reference="ei4-Tf-Ccl"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -1,6 +1,13 @@
-//
+
 //  QRCodeViewController.swift
+//  RoomBooking
+
 //  QRCodeReader
+
+//  Created by Gruppe10 on 21.04.2017.
+//  Copyright © 2017 Gruppe10. All rights reserved.
+//
+//
 //
 
 

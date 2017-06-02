@@ -74,7 +74,7 @@ class RoomViewController: UIViewController, UITableViewDelegate, UITableViewData
             viewDropDownMenu.isHidden = true
         }
     }
-    
+    //Button that handles the logout and sends the user to the Login page.
     @IBAction func logoutButtonPressed(_ sender: UIButton) {
         try! FIRAuth.auth()?.signOut()
         performSegue(withIdentifier: "segueRoomViewToLogin", sender: self)
