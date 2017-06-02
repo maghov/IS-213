@@ -7,7 +7,6 @@
    * [Getting started with tests](#getting-started-with-tests)
 * [Deployment](#deployment)
 * [Contributing](#contributing)
-* [Bug Reporting](#bug-reporting)
 * [Built With](#built-With)
 * [Authors](#authors)
 * [License](#license)
@@ -68,10 +67,6 @@ Currently, an Ad-hoc testing appraoch was mainly used throughout the development
 
 ## Contributing
 We appreciate all types of contributors that wish to help us in this project. Programming skills are not a necessity, and people with different types of backgrounds are welcome to contribute. [Please refer to our contrubuting page](https://github.com/maghov/IS-213/wiki/Contributing) on our [Wiki!](https://github.com/maghov/IS-213/wiki). Here you will find the different ways in how you may help us contribute on our project.
-
-## Bug Reporting
-
-KOMMER SNART
 
 ## Built With
 
